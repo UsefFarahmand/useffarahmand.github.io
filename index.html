@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usef Farahmand - Game Developer</title>
+        <!-- Link to Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.png" type="image/png">
+        <!-- Linking the external JavaScript file -->
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="photo_2024-01-03_15-41-50.jpg" alt="Usef Farahmand">
+        </div>
+        <div class="info-section">
+            <div class="content-box">
+                <h1>Usef Farahmand</h1>
+                <p class="subtitle">I'M A GAME DEVELOPER WITH TECHNICAL POWERS</p>
+
+                <!-- Updated Get in touch button with popup trigger -->
+                <button class="contact-button" onclick="openPopup()">
+                    <i class="fas fa-phone icon"></i> Get in touch
+                </button>
+
+                <p>
+                    I am a passionate game developer skilled in Unity and C#, with a focus on creating engaging gameplay, animations, and editor tools. I enjoy working on shaders, animations, and coding for game development. I have a strong interest in improving game mechanics and user experience.
+                </p>
+
+                <hr>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/useffarahmand" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://medium.com/@UsefFarahmand" target="_blank">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a href="https://t.me/UsefDigitalNotes" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@UsefFarahmand" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Structure for Contact Form -->
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <!-- Close button in the top-right corner -->
+            <span class="close-popup-btn" onclick="closePopup('contactPopup')">&times;</span>
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Type your message here" rows="5"></textarea>
+                </div>
+                <button type="submit" id="submitBtn" class="submit-btn" disabled>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+            <h2>Thanks for submitting!</h2>
+            <button class="close-btn" onclick="closePopup('thankYouPopup')">Close</button>
+        </div>
+    </div>
+</body>
+</html>

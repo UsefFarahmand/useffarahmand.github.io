@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100vh; /* Full height */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps in smaller viewports */
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-section {
+    flex: 0.45; /* Takes up 45% of the width */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.info-section {
+    position: absolute; /* Keeps the info box overlaying the image */
+    top: 50%;
+    left: 60%; /* Move the info box slightly to the right */
+    transform: translate(-25%, -50%);
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 520px; /* 30% larger */
+    z-index: 1;
+    font-size: 1.3em; /* 30% larger */
+}
+
+h1 {
+    font-size: 32px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; /* Adjust width to content */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.contact-button .icon {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #ff7a2d;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #cccccc; /* Light gray line */
+    margin: 20px 0;
+    width: 100%; /* Full width */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.social-media a:hover {
+    opacity: 0.8;
+}
+
+.social-media a:nth-child(1) {
+    background-color: #0077b5; /* LinkedIn */
+}
+
+.social-media a:nth-child(2) {
+    background-color: #00ab6c; /* Medium */
+}
+
+.social-media a:nth-child(3) {
+    background-color: #0088cc; /* Telegram */
+}
+
+.social-media a:nth-child(4) {
+    background-color: #ff0000; /* YouTube */
+}
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.active {
+    display: flex; /* Active popups will be shown */
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative; /* For the close button positioning */
+}
+
+/* Close Button Styling (Top-right corner) */
+.close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.close-popup-btn:hover {
+    color: #ff914d;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content .submit-btn,
+.popup-content .close-btn {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.popup-content .submit-btn:disabled {
+    background-color: #ccc;
+}
+
+.popup-content .close-btn:hover {
+    background-color: #ff7a2d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%; /* Set the width of the inputs to a smaller size */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff914d; /* Add focus style */
+}
+
+/* Description text */
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        height: auto; /* Allow for dynamic height */
+    }
+
+    .image-section {
+        flex: 1;
+        height: 50vh; /* Limit the height for smaller screens */
+    }
+
+    .info-section {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto;
+        max-width: 90%; /* Allow more space for content on smaller screens */
+        padding: 20px; /* Reduce padding for better fit */
+    }
+
+    .contact-button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
