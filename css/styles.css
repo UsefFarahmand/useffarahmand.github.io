@@ -2111,14 +2111,135 @@ progress {
           margin-inline-end: 1rem;
 }
 
-textarea.form-control {
-  min-height: calc(1.5em + 0.75rem + 2px);
+/* General input field styling */
+.form-control {
+  border-radius: 25px; /* Rounded inputs */
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  transition: all 0.2s ease-in-out;
 }
-textarea.form-control-sm {
-  min-height: calc(1.5em + 0.5rem + 2px);
+
+/* Adding space between form fields */
+.form-group {
+  margin-bottom: 20px; /* Adjust the value as needed for desired spacing */
 }
-textarea.form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+
+.form-control:focus {
+  border-color: #ff914d; /* Orange color for focus */
+  box-shadow: 0 0 5px rgba(255, 145, 77, 0.5); /* Orange glow */
+}
+
+/* Validation message styling */
+.is-invalid {
+  border-color: #dc3545 !important; /* Red border for invalid input */
+}
+
+.tooltip-text {
+  color: #dc3545; /* Red color for the tooltip message */
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+/* Message character limit counter */
+.char-counter {
+  font-size: 0.875em;
+  color: #6c757d;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+button {
+  position: relative;
+  width: 250px;
+  height: 75px;
+  border: 0;
+  outline: none;
+  background: #bd5d38; /* Adjust color to match your theme */
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* These two lines center the text */
+}
+
+button p {
+  margin: 0;
+}
+
+.checked {
+  width: 75px;
+  height: 75px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: -40px;
+  opacity: 0;
+}
+
+.checked svg {
+  width: 40px;
+  margin: 20px;
+}
+
+.checked path {
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.active {
+  background: #bd5d38; /* Adjusted color to bd5d38 */
+  transition: 1s;
+}
+
+.active p {
+  transition: 1s;
+  margin-right: 100px;
+}
+
+.active .checked {
+  opacity: 1;
+  transition: 1s;
+  right: 0;
+}
+
+.active .checked path {
+  transition: 1s;
+  transition-delay: 1s;
+  stroke-dashoffset: 0;
+}
+
+
+/* Styles for the dropdown */
+select.form-control {
+  appearance: none;
+  padding-right: 30px; /* Add space for dropdown arrow */
+  background-image: url('data:image/svg+xml;base64,...'); /* Arrow image */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.form-control:invalid + label {
+  color: red;
 }
 
 .form-control-color {
@@ -11027,4 +11148,36 @@ section.resume-section .subheading {
 /* Change the Submit button text color */
 .btn-primary {
   color: white !important;
+}
+
+.tooltip-custom {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-custom .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #f44336;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-custom:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.is-invalid:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
