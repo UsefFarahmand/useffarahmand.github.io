@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const messageInput = document.getElementById('message');
     const btnText = document.getElementById('btnText');
     const charCount = document.getElementById('charCount');
+    const maxChars = 500; // Set the max character count for the message
+
+    // Set initial character count (starts at 500)
+    charCount.textContent = maxChars;
 
     // URL validation for GitHub or LinkedIn
     function validateAccountUrl(url) {
@@ -97,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }).then(response => {
             console.log('SUCCESS!', response.status, response.text);
             form.reset();
-            charCount.textContent = "0"; // Reset character counter
+            charCount.textContent = maxChars; // Reset character counter to maxChars
             btnText.innerHTML = "Submit";
             submitBtn.classList.remove("active");
         }).catch(error => {
@@ -105,7 +109,22 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Submission failed, please try again.');
         });
     });
+
+    // Character count logic for message input
+    messageInput.addEventListener('input', function () {
+        const currentLength = messageInput.value.length;
+
+        // If the input exceeds the maxChars, trim it
+        if (currentLength > maxChars) {
+            messageInput.value = messageInput.value.substring(0, maxChars);
+        }
+
+        // Update the remaining character count
+        const remainingChars = maxChars - messageInput.value.length;
+        charCount.textContent = remainingChars;
+    });
 });
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
