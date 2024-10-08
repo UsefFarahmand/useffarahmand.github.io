@@ -3,9 +3,24 @@
         "image": "images/background1.jpg" 
     },
     {
-        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=1350&q=80"  
+        "image": "images/background2.jpg" 
     },
     {
-        "image": "https://images.unsplash.com/photo-1506748686169-eaf8c19a837e?fit=crop&w=1350&q=80"  
+        "image": "images/background3.jpg" 
+    },
+    {
+        "image": "images/background4.jpg" 
+    },
+    {
+        "image": "images/background5.jpg" 
+    },
+    {
+        "image": "images/background6.jpg" 
+    },
+    {
+        "image": "images/background7.jpg" 
+    },
+    {
+        "image": "images/background8.jpg" 
     }
 ]
