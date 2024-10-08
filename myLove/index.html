@@ -66,37 +66,43 @@
 
     <script>
         let currentIndex = 0;
-
-        function updateTextAndBackground(data) {
+    
+        function updateText(data) {
             const textContent = document.getElementById('textContent');
             textContent.innerHTML = data[currentIndex].text;
-
+            
+            // Check if the text is in Persian and set the direction
             const isPersian = /[\u0600-\u06FF]/.test(data[currentIndex].text);
-            if (isPersian) {
-                textContent.style.direction = 'rtl';
-            } else {
-                textContent.style.direction = 'ltr';
-            }
-
-            fetch('backgrounds.json')
-                .then(response => response.json())
-                .then(bgData => {
-                    document.body.style.backgroundImage = `url('${bgData[currentIndex].image}')`;
-                });
+            textContent.style.direction = isPersian ? 'rtl' : 'ltr';
         }
-
-        // Fetch daily text content
+    
+        // Fetch daily text content and backgrounds
         fetch('text.json')
             .then(response => response.json())
-            .then(data => {
-                updateTextAndBackground(data);
-
-                document.getElementById('changeTextBtn').addEventListener('click', () => {
-                    currentIndex = (currentIndex + 1) % data.length; // Cycle through texts
-                    updateTextAndBackground(data);
-                });
+            .then(textData => {
+                fetch('backgrounds.json')
+                    .then(response => response.json())
+                    .then(bgData => {
+                        const today = new Date();
+                        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+    
+                        // Set the initial background for today (doesn't change on button click)
+                        const backgroundIndex = dayOfYear % bgData.length;
+                        document.body.style.backgroundImage = `url('${bgData[backgroundIndex].image}')`;
+    
+                        // Set initial text
+                        currentIndex = dayOfYear % textData.length;
+                        updateText(textData);
+    
+                        // Add event listener to the button to change the text only
+                        document.getElementById('changeTextBtn').addEventListener('click', () => {
+                            currentIndex = (currentIndex + 1) % textData.length; // Cycle through texts
+                            updateText(textData); // Update only the text
+                        });
+                    });
             })
             .catch(error => console.error('Error fetching content:', error));
     </script>
+    
 </body>
 </html>
