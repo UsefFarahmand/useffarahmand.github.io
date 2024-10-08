@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Love Note</title>
+
+    <!-- Font Awesome for the icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Persian font - Yekan -->
     <style>
+        @font-face {
+            font-family: 'Yekan';
+            src: url('fonts/Yekan.woff2') format('woff2'),
+                 url('fonts/Yekan.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Yekan', Arial, sans-serif;
             color: white;
             text-align: center;
             background-size: cover;
@@ -31,44 +44,59 @@
                 padding: 10px;
             }
         }
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #f06292;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+    <i class="fas fa-heart"></i> <!-- Icon added at the top -->
     <div class="content" id="textContent">Loading...</div>
 
+    <button id="changeTextBtn">Change Text</button>
+
     <script>
+        let currentIndex = 0;
+
+        function updateTextAndBackground(data) {
+            const textContent = document.getElementById('textContent');
+            textContent.innerHTML = data[currentIndex].text;
+
+            const isPersian = /[\u0600-\u06FF]/.test(data[currentIndex].text);
+            if (isPersian) {
+                textContent.style.direction = 'rtl';
+            } else {
+                textContent.style.direction = 'ltr';
+            }
+
+            fetch('backgrounds.json')
+                .then(response => response.json())
+                .then(bgData => {
+                    document.body.style.backgroundImage = `url('${bgData[currentIndex].image}')`;
+                });
+        }
+
         // Fetch daily text content
         fetch('text.json')
             .then(response => response.json())
-            .then(textData => {
-                fetch('backgrounds.json')
-                    .then(response => response.json())
-                    .then(bgData => {
-                        const today = new Date();
-                        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+            .then(data => {
+                updateTextAndBackground(data);
 
-                        // Get the index for both text and background
-                        const textIndex = dayOfYear % textData.length;
-                        const bgIndex = dayOfYear % bgData.length;
-
-                        // Set the text content
-                        const textContent = document.getElementById('textContent');
-                        textContent.innerHTML = textData[textIndex].text;
-
-                        // Set background image
-                        document.body.style.backgroundImage = `url('${bgData[bgIndex].image}')`;
-
-                        // Check if the text contains Persian characters and apply RTL styling if necessary
-                        const isPersian = /[\u0600-\u06FF]/.test(textData[textIndex].text);
-                        if (isPersian) {
-                            textContent.style.direction = 'rtl';
-                        } else {
-                            textContent.style.direction = 'ltr';
-                        }
-                    })
-                    .catch(error => console.error('Error fetching backgrounds:', error));
+                document.getElementById('changeTextBtn').addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % data.length; // Cycle through texts
+                    updateTextAndBackground(data);
+                });
             })
-            .catch(error => console.error('Error fetching text:', error));
+            .catch(error => console.error('Error fetching content:', error));
     </script>
 </body>
 </html>
