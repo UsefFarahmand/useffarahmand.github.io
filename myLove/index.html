@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Love Note</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .content {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="textContent">Loading...</div>
+
+    <script>
+        // Fetch daily text content
+        fetch('text.json')
+            .then(response => response.json())
+            .then(textData => {
+                fetch('backgrounds.json')
+                    .then(response => response.json())
+                    .then(bgData => {
+                        const today = new Date();
+                        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+
+                        // Get the index for both text and background
+                        const textIndex = dayOfYear % textData.length;
+                        const bgIndex = dayOfYear % bgData.length;
+
+                        // Set the text content
+                        const textContent = document.getElementById('textContent');
+                        textContent.innerHTML = textData[textIndex].text;
+
+                        // Set background image
+                        document.body.style.backgroundImage = `url('${bgData[bgIndex].image}')`;
+
+                        // Check if the text contains Persian characters and apply RTL styling if necessary
+                        const isPersian = /[\u0600-\u06FF]/.test(textData[textIndex].text);
+                        if (isPersian) {
+                            textContent.style.direction = 'rtl';
+                        } else {
+                            textContent.style.direction = 'ltr';
+                        }
+                    })
+                    .catch(error => console.error('Error fetching backgrounds:', error));
+            })
+            .catch(error => console.error('Error fetching text:', error));
+    </script>
+</body>
+</html>
