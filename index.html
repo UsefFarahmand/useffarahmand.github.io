@@ -66,7 +66,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#explore">My Works</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
                 </ul>
             </div>
@@ -84,11 +84,34 @@
                         Unity Developer & Technical Artist
                     </h2>
                     <p class="lead mb-5">I am a remote freelancer specializing in Unity, with the ability to develop a wide range of games. Since entering the game development world in 2020, I’ve contributed to various Android and PC projects as a programmer and technical artist. My passion for both art and animation drives me to continuously refine my skills. I am also eager to work with other engines; aside from Unity, I’ve implemented projects using Godot and Cocos Creator. My goal is to further grow as a technical artist.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/useffarahmand"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://medium.com/@UsefFarahmand"><i class="fab fa-medium"></i></a>
-                        <a class="social-icon" href="https://www.youtube.com/@UsefFarahmand"><i class="fab fa-youtube"></i></a>
-                        <a class="social-icon" href="https://t.me/UsefGameLab"><i class="fab fa-telegram"></i></a>
+
+                    <div class="about-actions">
+
+                        <a class="download-btn"
+                            href="assets/PDF/Usef Farahmand CV.pdf"
+                            download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+
+                        <div class="social-icons">
+                            <a class="social-icon" href="https://www.linkedin.com/in/useffarahmand">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a class="social-icon" href="https://medium.com/@UsefFarahmand">
+                                <i class="fab fa-medium"></i>
+                            </a>
+
+                            <a class="social-icon" href="https://www.youtube.com/@UsefFarahmand">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <a class="social-icon" href="https://t.me/UsefGameLab">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -97,25 +120,61 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    
-        <!-- Resume Section-->
-        <section class="resume-section" id="resume">
+
+        <!-- Explore My Work Section-->
+        <section class="resume-section" id="explore">
             <div class="resume-section-content">
-                <h2 class="mb-0">Resume</h2>
-                <div class="subheading">Professional Experience & Background</div>
-                <p>Here is my CV, you can download it using the button below:</p>
-                <embed src="assets/PDF/Usef Farahmand CV.pdf" type="application/pdf" width="100%" height="500px" />
-                <div class="mt-4">
-                    
-                <div class="button">
-                    <a href="assets/PDF/Usef Farahmand CV.pdf" download="Usef_Farahmand_CV.pdf">
-                        <i class="fas fa-download"></i> Download CV
+
+                <h2 class="mb-5">Explore My Work</h2>
+
+                <div class="explore-list">
+
+                    <a href="projects.html" id="projects" class="explore-item">
+
+                        <img
+                            src="assets/img/projects-cover.jpg"
+                            alt="Projects">
+
+                        <div class="explore-info">
+
+                            <h3>Projects</h3>
+
+                            <p>
+                                Explore my games, prototypes, game jams and development projects.
+                            </p>
+
+                            <span class="explore-btn">
+                                View Projects
+                            </span>
+
+                        </div>
+
                     </a>
-                    <p class="top">Filename: UsefFarahmand_CV.pdf</p>
-                    <p class="bottom">Size: 1.67MB</p>
-                </div>
+
+                    <a href="articles.html" id="articles" class="explore-item">
+
+                        <img
+                            src="assets/img/articles-cover.jpg"
+                            alt="Articles">
+
+                        <div class="explore-info">
+
+                            <h3>Articles</h3>
+
+                            <p>
+                                Read my articles about game development, design and technical art.
+                            </p>
+
+                            <span class="explore-btn">
+                                Read Articles
+                            </span>
+
+                        </div>
+
+                    </a>
 
                 </div>
+
             </div>
         </section>
 
@@ -167,8 +226,8 @@
                         </button>
                       </div>
                 </form>
-                
             </div>
         </section>
+
     </body>
 </html>

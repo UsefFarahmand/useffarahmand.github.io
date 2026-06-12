@@ -11093,21 +11093,47 @@ section.resume-section .subheading {
   margin: 50px 0;
 }
 
-.button a {
-  display: block;
-  height: 50px;
-  width: 270px;
-  color: white;
-  font: 17px/50px sans-serif, Helvetica;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  background: #bd5d38;
-  position: relative;
+.about-actions{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    margin-top:2rem;
+    flex-wrap:wrap;
+}
+
+.social-icon,
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.5rem;
+
+    padding: 0 1.5rem;
+
+    border-radius: 999px;
+
+    background-color: #495057;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover,
+.download-btn:hover {
+    background-color: #bd5d38;
+    color: white;
+}
+
+.download-btn {
+    gap: 0.5rem;
 }
 
 .button p {
-  background: #bda038;
+  background: #343A40;
   display: block;
   height: 40px;
   width: 250px;
@@ -11172,4 +11198,93 @@ section.resume-section .subheading {
 .is-invalid:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+.explore-list{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.explore-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+    padding:1.5rem;
+
+    border-radius:16px;
+
+    background:#212529;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.explore-item img{
+    width:280px;
+
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+}
+
+.explore-info{
+    flex:1;
+}
+
+.explore-info h3{
+    color:white;
+
+    margin-bottom:.75rem;
+}
+
+.explore-info p{
+    color:#adb5bd;
+
+    margin-bottom:1.25rem;
+}
+
+.explore-btn{
+    display:inline-block;
+
+    padding:.75rem 1.5rem;
+
+    border-radius:999px;
+
+    background:#ff914d;
+
+    color:white;
+
+    font-weight:600;
+}
+
+.explore-item:hover{
+    transform:translateY(-4px);
+
+    background:#2c3136;
+}
+
+.explore-item:hover .explore-btn{
+    background:#ff4d62;
+}
+
+@media (max-width:768px){
+
+    .explore-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .explore-item img{
+        width:100%;
+        height:220px;
+    }
+
 }

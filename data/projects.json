@@ -1,0 +1,257 @@
+[
+    {
+        "title":"GT Racing",
+
+        "genre":"Playable ads",
+
+        "platforms":[
+        ],
+
+        "releaseDate":"2021-04-01",
+
+        "lastUpdate":"2021-04-01",
+
+        "thumbnail":"https://media.licdn.com/dms/image/v2/D4E2DAQEz_-O-7NJM2w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718702708402?e=1781881200&v=beta&t=ub_Ts2vONLJM4uFsihJKsqLT9UholpRDHFuUtu6Cw5E",
+
+        "description":"A playable ad for GT Racing developed in Cocos Creator with TypeScript, commissioned by Berga Games. This interactive mobile ad introduces the adrenaline-pumping gameplay of GT Racing. Stay tuned for more updates! 🏎️💨",
+
+        "images":[
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/GT Racing/Video thumbnail.jpg",
+            "url":"https://www.youtube.com/watch?v=AhYC_hzblXM"
+        }
+        ],
+
+        "links":[
+        {
+            "title":"Play on web",
+            "icon":"fas fa-gamepad",
+            "url":"assets/html/GT Racing.html"
+        }
+        ]
+    },
+    {
+        "title":"Farmand",
+
+        "genre":"Playable ads",
+
+        "platforms":[
+        ],
+
+        "releaseDate":"2021-06-01",
+
+        "lastUpdate":"2021-06-01",
+
+        "thumbnail":"assets/img/projects/Farmand/thumbnail.jpg",
+
+        "description":"The Fermand is portrayed as an interactive advertisement for the Fermand Chocolate Company. It has been incorporated into one of their commercial campaigns lately.",
+
+        "images":[
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/Farmand/thumbnail.jpg",
+            "url":"https://www.youtube.com/watch?v=SOQxlsLB2fI"
+        }
+        ],
+
+        "links":[
+        ]
+    },
+    {
+        "title":"Nailer Mailer",
+
+        "genre":"Hyper Casual",
+
+        "platforms":[
+            "Android"
+        ],
+
+        "releaseDate":"2021-07-01",
+
+        "lastUpdate":"2021-09-01",
+
+        "thumbnail":"assets/img/projects/Nailer Mailer/Logo.webp",
+
+        "description": "Nailer Mailer is a super-casual shooter game for Android where players battle through enemy-filled rooms to reach new levels. My contributions included developing the UI system, implementing shopping mechanics, and creating the shooting system with enemy wall attachment behavior. I also developed interactive environment effects such as wall cracking, blood splatters, object shaking, and character ragdoll systems using Puppet Master and Unity's built-in ragdoll solution.\n\nTechnologies & Skills: Unity, C#, Game Development, UI Programming, Physics Simulation, Ragdoll Systems.",
+
+        "images":[
+            
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/Nailer Mailer/Video thumbnail - 1.jpg",
+            "url":"https://www.youtube.com/watch?v=2uNSR1E4CDg"
+        }
+        ],
+
+        "links":[
+        ]
+    },
+    {
+        "title":"Balloon Boomer!",
+
+        "genre":"Hyper Casual",
+
+        "platforms":[
+            "Android"
+        ],
+
+        "releaseDate":"2021-08-01",
+
+        "lastUpdate":"2021-09-01",
+
+        "thumbnail":"assets/img/projects/Balloon Bommer/logo.webp",
+
+        "description": "Balloon Bommer is a hyper-casual shooter game for Android where players battle through multiple rooms filled with enemies to unlock new stages. My responsibilities included designing and implementing the user interface system, developing the in-game shopping mechanics, and creating interactive environment features that improved gameplay feedback and immersion.\n\nSkills & Technologies: Unity, C#, Game Development, User Interface Programming.",
+
+        "images":[
+            "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (1).webp",
+            "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (2).webp",
+            "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (3).webp",
+            "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (4).webp"
+        ],
+
+        "videos":[
+        ],
+
+        "links":[
+        ]
+    },
+    {
+        "title":"Hide and Seek",
+
+        "genre":"Multiplayer action-shooter",
+
+        "platforms":[
+            "Android"
+        ],
+
+        "releaseDate":"2021-11-01",
+
+        "lastUpdate":"2022-02-01",
+
+        "thumbnail":"assets/img/projects/Hide and Seek/Hide and Seek - thumbnail.PNG",
+
+        "description": "Hide and Seek 🕵️‍♂️ is an addictive multiplayer action-shooter game, adding a thrilling twist to the popular Prop Hunt genre. Players can hide as various props within any room or attempt to escape from others. Simply swap and become any kind of hidden object, whether a chair, a box, even a toilet bowl!\n\nThis design concept seems to be based on some of the old Iranian comics and equipment used within the 1370s Hijri and earlier era-inspired by cultural elements that are rare for them.",
+
+        "images":[
+            "assets/img/projects/Hide and Seek/Hide and Seek - lobby.png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - main menu.png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - map (1).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - map (2).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - map (3).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek- Matchmaking.png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (1).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (2).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (3).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (4).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (5).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (6).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (7).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (8).png",
+            "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (9).png"
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/Hide and Seek/Hide and Seek - lobby.png",
+            "url":"https://www.youtube.com/watch?v=cBpBIwBkTus"
+        }
+        ],
+
+        "links":[
+        ]
+    },
+    {
+        "title":"The Skatepark",
+
+        "genre":"Open World / Sports",
+
+        "platforms":[
+            "WebGL"
+        ],
+
+        "releaseDate":"2022-03-01",
+
+        "lastUpdate":"2022-09-01",
+
+        "thumbnail":"assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
+
+        "description": "The Skatepark Project is an open-world skateboarding game featuring characters based on Nounz NFTs. Players can perform a wide variety of skateboard tricks, interact with NPCs, challenge other players, and participate in competitive skateboard duels. As a Technical Artist and Animator on the project, I was responsible for character creation and animation, integrating art assets into the game engine, and developing technical tools to streamline workflows and improve the gameplay experience. I also implemented core skateboard mechanics and designed customization systems for character avatars and skateboard skins, providing players with greater personalization options.\n\nSkills & Technologies: Unity, C#, Technical Animation, 2D Animation, Character Rigging, Game Development, Technical Art.",
+
+        "images":[
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (1).jpg",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (2).jpg",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (3).jpg",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (4).jpg",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (5).jpg",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Trick-1.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Trick-2.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Trick-3.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Trick-4.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project - Trick-5.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project -Ship and bridge.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project -Guitarist.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project -Graffiti.gif",
+            "assets/img/projects/The Skatepark Project/The Skatepark Project -Trees.gif"
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
+            "url":"assets/img/projects/The Skatepark Project/The Skatepark Project.mp4"
+        }
+        ],
+
+        "links":[
+            {
+                "title":"Project Showcase",
+                "icon":"fab fa-linkedin",
+                "url":"https://www.linkedin.com/feed/update/urn:li:activity:7096860562759766016"
+            }
+        ]
+    },
+    {
+        "title":"Mr. Bean Solitaire: Adventure",
+
+        "genre":"Card Game / Casual",
+
+        "platforms":[
+            "Android"
+        ],
+
+        "releaseDate":"2023-12-01",
+
+        "lastUpdate":"2024-08-09",
+
+        "thumbnail":"https://play-lh.googleusercontent.com/dv0G3uNTd5nO4yIgiRf7rEG87AJnB6030DmZjA5jGyDxfR50SOfGa6gBHLMShHpTk5zeW8CKdOoJLpIJrOK7=w240-h480-rw",
+
+        "description": "Mr. Bean Solitaire: Adventure is a casual card game available on Google Play, delivering an engaging solitaire experience inspired by the beloved Mr. Bean universe. As part of the development team, I contributed to implementing core gameplay mechanics and designing the user interface. I also created and integrated animations for both cards and UI elements, ensuring smooth interactions and an enjoyable player experience.\n\nSkills & Technologies: Unity, C#, Game Development, UI Programming, Technical Animation, 2D Animation.",
+
+        "images":[
+            "https://play-lh.googleusercontent.com/3Ljir9VAOJkZxsLYHaM4Ml44EvW7UZr_YIUSmQ5WhJA66U3QEjsMdP2RwMytthHTHSd4qu7tJrBuv6yEaAGK=w2560-h1440-rw",
+            "https://play-lh.googleusercontent.com/gpdMjrmPlq325JJKUHhuJ_Z36a_9RbLeDV-O4hwiDr8tSssUbbQDrAeBNhfaEWPfUA-6a9TaAcCxLE_jwK-t=w2560-h1440-rw",
+            "https://play-lh.googleusercontent.com/0Fh02d68ikjaHkb2SXd9rQvFaF1gS2jY9-fD1AECfAklCMr_9jaqb9VXroxhiNaMKmEGjGTiKHC-b684C2KVlAc=w2560-h1440-rw",
+            "https://play-lh.googleusercontent.com/A55apaZtlN3u9lmiQjQo7jAKzawddVu8HMBtaKzKD03LkAkh_vQSpGbXpFY1qzgvgJCCNr-67Lc59XTJX-Ygxw=w2560-h1440-rw",
+            "https://play-lh.googleusercontent.com/de0kUyrKxJvDnQy5teNOvXLjx10MbumbZBpH-qOdY01CFr-6rmNbv1zTcfazEYc2wKdmauxtcWRdL0MS6kXfe2k=w2560-h1440-rw"
+        ],
+
+        "videos":[
+        
+        ],
+
+        "links":[
+            {
+                "title":"Google Play",
+                "icon":"fab fa-google-play",
+                "url":"https://play.google.com/store/apps/details?id=com.mrbean.solitaire.card.game.tripeaks&hl=en_US"
+            }
+        ]
+    }
+]
