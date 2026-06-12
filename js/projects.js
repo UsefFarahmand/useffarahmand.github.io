@@ -22,39 +22,49 @@ fetch("data/projects.json")
     .then(response => response.json())
     .then(projects => {
 
-        projects.forEach(project => {
+        projects
+            .sort((a, b) => {
 
-            const card = document.createElement("div");
+                const dateA = new Date(a.lastUpdate || a.releaseDate);
+                const dateB = new Date(b.lastUpdate || b.releaseDate);
 
-            card.classList.add("project-card");
+                return dateB - dateA;
 
-            card.innerHTML = `
-                <img src="${project.thumbnail}" alt="${project.title}">
+            })
+            .forEach(project => {
 
-                <div class="project-content">
+                const card = document.createElement("div");
 
-                    <h3 class="project-title">
-                        ${project.title}
-                    </h3>
+                card.classList.add("project-card");
 
-                    <div class="project-genre">
-                        ${project.genre || ""}
+                card.innerHTML = `
+                    <img src="${project.thumbnail}" alt="${project.title}">
+
+                    <div class="project-content">
+
+                        <h3 class="project-title">
+                            ${project.title}
+                        </h3>
+
+                        <div class="project-genre">
+                            ${project.genre || ""}
+                        </div>
+
+                        <button class="project-btn">
+                            View Project
+                        </button>
+
                     </div>
+                `;
 
-                    <button class="project-btn">
-                        View Project
-                    </button>
+                card.querySelector(".project-btn")
+                    .addEventListener("click", () => {
+                        openProject(project);
+                    });
 
-                </div>
-            `;
+                projectsGrid.appendChild(card);
 
-            card.querySelector(".project-btn")
-                .addEventListener("click", () => {
-                    openProject(project);
-                });
-
-            projectsGrid.appendChild(card);
-        });
+            });
 
     })
     .catch(error => {
