@@ -11093,21 +11093,47 @@ section.resume-section .subheading {
   margin: 50px 0;
 }
 
-.button a {
-  display: block;
-  height: 50px;
-  width: 270px;
-  color: white;
-  font: 17px/50px sans-serif, Helvetica;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  background: #bd5d38;
-  position: relative;
+.about-actions{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    margin-top:2rem;
+    flex-wrap:wrap;
+}
+
+.social-icon,
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.5rem;
+
+    padding: 0 1.5rem;
+
+    border-radius: 999px;
+
+    background-color: #495057;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover,
+.download-btn:hover {
+    background-color: #bd5d38;
+    color: white;
+}
+
+.download-btn {
+    gap: 0.5rem;
 }
 
 .button p {
-  background: #bda038;
+  background: #343A40;
   display: block;
   height: 40px;
   width: 250px;
