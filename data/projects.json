@@ -1,0 +1,42 @@
+[
+    {
+        "title":"Last Flag",
+
+        "genre":"Tower Defense",
+
+        "platforms":[
+        "Android",
+        "PC"
+        ],
+
+        "releaseDate":"2024-10-01",
+
+        "lastUpdate":"2025-05-17",
+
+        "thumbnail":"assets/img/projects/lastflag/thumb.jpg",
+
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+        "images":[
+        "assets/img/projects/lastflag/1.jpg",
+        "assets/img/projects/lastflag/2.jpg",
+        "assets/img/projects/lastflag/2.jpg",
+        "assets/img/projects/lastflag/2.jpg"
+        ],
+
+        "videos":[
+        {
+            "thumbnail":"assets/img/projects/lastflag/3.jpg",
+            "url":"https://www.youtube.com/watch?v=IrEFTyO3Z3c&list=RDIrEFTyO3Z3c&start_radio=1&pp=oAcB"
+        }
+        ],
+
+        "links":[
+        {
+            "title":"Google Play",
+            "icon":"fab fa-google-play",
+            "url":"..."
+        }
+        ]
+    }
+]
