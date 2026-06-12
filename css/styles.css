@@ -11199,3 +11199,92 @@ section.resume-section .subheading {
   visibility: visible;
   opacity: 1;
 }
+.explore-list{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.explore-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+    padding:1.5rem;
+
+    border-radius:16px;
+
+    background:#212529;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.explore-item img{
+    width:280px;
+
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+}
+
+.explore-info{
+    flex:1;
+}
+
+.explore-info h3{
+    color:white;
+
+    margin-bottom:.75rem;
+}
+
+.explore-info p{
+    color:#adb5bd;
+
+    margin-bottom:1.25rem;
+}
+
+.explore-btn{
+    display:inline-block;
+
+    padding:.75rem 1.5rem;
+
+    border-radius:999px;
+
+    background:#ff914d;
+
+    color:white;
+
+    font-weight:600;
+}
+
+.explore-item:hover{
+    transform:translateY(-4px);
+
+    background:#2c3136;
+}
+
+.explore-item:hover .explore-btn{
+    background:#ff4d62;
+}
+
+@media (max-width:768px){
+
+    .explore-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .explore-item img{
+        width:100%;
+        height:220px;
+    }
+
+}
