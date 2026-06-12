@@ -384,6 +384,16 @@
     background:#ff914d;
 }
 
+#gallery-prev.disabled,
+#gallery-next.disabled{
+
+    opacity:.3;
+
+    pointer-events:none;
+
+    cursor:default;
+}
+
 /* =========================
    Videos
 ========================= */

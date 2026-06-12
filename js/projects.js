@@ -215,6 +215,12 @@ function openProject(project){
         nextBtn.style.display = "none";
     }
 
+    gallery.addEventListener("scroll", () => {
+
+        updateGalleryButtons();
+
+    });
+
     /* Links */
 
     if(project.links){
@@ -239,6 +245,14 @@ function openProject(project){
     }
 
     overlay.classList.add("active");
+
+    gallery.scrollLeft = 0;
+
+    requestAnimationFrame(() => {
+
+        updateGalleryButtons();
+
+    });
 
     document.body.style.overflow = "hidden";
 }
@@ -320,4 +334,32 @@ function formatDate(dateString){
             day:"numeric"
         }
     );
+}
+
+function updateGalleryButtons(){
+
+    const maxScroll =
+        gallery.scrollWidth - gallery.clientWidth;
+
+
+        console.log(
+    "scrollLeft:", gallery.scrollLeft,
+    "clientWidth:", gallery.clientWidth,
+    "scrollWidth:", gallery.scrollWidth,
+    "maxScroll:", maxScroll
+);
+    prevBtn.classList.toggle(
+        "disabled",
+        gallery.scrollLeft <= 1
+    );
+
+    nextBtn.classList.toggle(
+        "disabled",
+        gallery.scrollLeft >= maxScroll - 10
+    );
+
+    console.log(
+    "next disabled:",
+    nextBtn.classList.contains("disabled")
+);
 }
