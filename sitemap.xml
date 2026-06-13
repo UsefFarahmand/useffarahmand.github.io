@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://useffarahmand.com/</loc>
     <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://useffarahmand.com/projects.html</loc>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://useffarahmand.com/articles.html</loc>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://useffarahmand.com/fa/</loc>
+    <lastmod>2026-06-10</lastmod>
+  </url>
+
 </urlset>
