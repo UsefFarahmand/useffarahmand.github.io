@@ -11101,8 +11101,7 @@ section.resume-section .subheading {
     flex-wrap:wrap;
 }
 
-.social-icon,
-.download-btn {
+.social-icon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -11122,9 +11121,33 @@ section.resume-section .subheading {
     transition: all 0.2s ease-in-out;
 }
 
-.social-icon:hover,
-.download-btn:hover {
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.5rem;
+
+    padding: 0 1.5rem;
+
+    border-radius: 999px;
+
     background-color: #bd5d38;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: #bd5d38;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #FF4D62;
     color: white;
 }
 
