@@ -139,3 +139,21 @@
     }
 
 }
+
+.nav-dropdown.active .dropdown-menu-custom{
+    display:block;
+}
+
+.nav-dropdown.active .dropdown-arrow{
+    transform:rotate(180deg);
+}
+
+.dropdown-menu-custom a.active{
+    color:#fff;
+    font-weight:700;
+}
+
+.nav-link.active{
+    color:#fff !important;
+    font-weight:700;
+}

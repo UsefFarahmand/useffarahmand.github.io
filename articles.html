@@ -13,24 +13,67 @@
         <meta name="author" content="Usef Farahmand" />
         <meta name="keywords" content="Usef Farahmand, Unity Developer, Technical Artist, Game Developer, Unity, Godot, Cocos Creator, Mobile Games, PC Games, Portfolio, Resume" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <link rel="canonical" href="https://useffarahmand.com/" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <a class="navbar-brand" href="index.html">
                 <span class="d-block d-lg-none">Usef Farahmand</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Usef Farahmand - Unity Developer and Technical Artist" /></span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                        src="assets/img/profile.png"
+                        alt="Usef Farahmand">
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html #contact">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item nav-dropdown open">
+
+                        <a class="nav-link active"
+                        href="#"
+                        id="myWorkBtn">
+
+                            My Work
+
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+
+                        </a>
+
+                        <ul class="dropdown-menu-custom">
+
+                            <li>
+                                <a href="projects.html">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="active" href="articles.html">
+                                    Articles
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -54,6 +97,9 @@
 
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
         <script src="js/articles.js"></script>
 
     </body>

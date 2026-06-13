@@ -151,3 +151,19 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const myWorkBtn =
+    document.getElementById("myWorkBtn");
+
+if(myWorkBtn){
+
+    myWorkBtn.addEventListener("click", () => {
+
+        const dropdown =
+            myWorkBtn.closest(".nav-dropdown");
+
+        dropdown.classList.toggle("open");
+
+    });
+
+}
