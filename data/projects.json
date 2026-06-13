@@ -253,5 +253,107 @@
                 "url":"https://play.google.com/store/apps/details?id=com.mrbean.solitaire.card.game.tripeaks&hl=en_US"
             }
         ]
+    },
+    {
+        "title":"UAPI UniTask",
+
+        "genre":"Unity Package",
+
+        "platforms":[
+            "PC"
+        ],
+
+        "releaseDate":"2024-07-01",
+
+        "lastUpdate":"2024-10-24",
+
+        "thumbnail":"assets/img/projects/Unity Packages/Unity Logo.webp",
+
+        "description": "UAPI UniTask is an open-source C# library designed to streamline API integration within Unity projects. It provides a unified system for managing external API connections, making it easier for developers to connect and configure various services in a game or application. My contributions centered on improving flexibility and performance within Unity environments.",
+
+        "images":[
+            
+        ],
+
+        "videos":[
+        
+        ],
+
+        "links":[
+            {
+                "title":"GitHub",
+                "icon":"fab fa-github",
+                "url":"https://github.com/UModules/UAPI-UniTask"
+            }
+        ]
+    },
+    {
+        "title":"UAPI Coroutine",
+
+        "genre":"Unity Package",
+
+        "platforms":[
+            "PC"
+        ],
+
+        "releaseDate":"2024-10-01",
+
+        "lastUpdate":"2024-10-16",
+
+        "thumbnail":"assets/img/projects/Unity Packages/Unity Logo.webp",
+
+        "description": "UAPI Coroutine is an open-source C# library built to handle asynchronous API requests within Unity using IEnumerator. It simplifies API integration by leveraging Unity’s built-in coroutine system, allowing for seamless API calls without the need for async/await or Task. My work focused on enhancing API management for game and application development, providing a flexible and lightweight solution for Unity developers.",
+
+        "images":[
+            
+        ],
+
+        "videos":[
+        
+        ],
+
+        "links":[
+            {
+                "title":"GitHub",
+                "icon":"fab fa-github",
+                "url":"https://github.com/UModules/UAPI-Coroutine"
+            }
+        ]
+    },
+    {
+        "title":"Simulix",
+
+        "genre":"Simulation",
+
+        "platforms":[
+            "PC"
+        ],
+
+        "releaseDate":"2024-06-01",
+
+        "lastUpdate":"2024-12-16",
+
+        "thumbnail":"assets/img/projects/Simulix/Simulix - Logo.png",
+
+        "description": "Simulix 🏢 is a cutting-edge 3D presentation software designed to enhance the presentation and sales of building units to clients. It offers unique features, including:\n\n1. Explore the project in 360-degree view in day or night settings 🌞🌜\n\n2. Show outstanding surrounding landmarks near the project 🌆\n3. Filter and select available units and show the 2D and 3D plans 🗺️\n4. Showcase each unit's balcony view and interior gallery 🏡\n5. Exploring project amenities in a tour and show the gallery 🌟🖼\nAs the programmer for this project, I was responsible for implementing the flexible user interface, the unit filtering system, and client-server communication. 💪",
+
+        "images":[
+            
+        ],
+
+        "videos":[
+            {
+                "thumbnail":"assets/img/projects/Simulix/Simulix - Video thumbnail.jpg",
+                "url":"https://www.youtube.com/watch?v=QX04S6vc4ts"
+            }
+        ],
+
+        "links":[
+            {
+                "title":"LinkedIn",
+                "icon":"fab fa-LinkedIn",
+                "url":"https://www.linkedin.com/feed/update/urn:li:activity:7201563858644193280?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BEyWmixycTAKvJQc3QtXaYw%3D%3D"
+            }
+        ]
     }
 ]
