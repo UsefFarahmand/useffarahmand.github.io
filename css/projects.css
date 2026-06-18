@@ -138,15 +138,32 @@
     letter-spacing: 0.5px;
 }
 
-.project-personal::after {
+.project-card:has(.project-personal)::after {
     content: "PERSONAL";
-    display: inline-block;
-    margin-left: 8px;
+
+    position: absolute;
+    top: 16px;
+    right: -28px;
+
+    transform: rotate(35deg);
+
+    width: 145px;
+    text-align: center;
+
+    padding: 5px 0;
+
     font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 6px;
-    background: rgba(255,145,77,0.15);
-    color: #ff914d;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    background: rgba(255, 145, 77);
+    color: white;
+
+    border-radius: 4px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+
+    z-index: 2;
 }
 
 .project-card:has(.project-personal):hover {
