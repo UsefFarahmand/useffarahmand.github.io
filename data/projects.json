@@ -4,6 +4,9 @@
 
         "genre":"Playable ads",
 
+        "projectType": "client",
+        "client": "White Designers Studios",
+
         "platforms":[
         ],
 
@@ -38,6 +41,9 @@
 
         "genre":"Playable ads",
 
+        "projectType": "client",
+        "client": "White Designers Studios",
+
         "platforms":[
         ],
 
@@ -66,6 +72,9 @@
         "title":"Nailer Mailer",
 
         "genre":"Hyper Casual",
+
+        "projectType": "client",
+        "client": "White Designers Studios",
 
         "platforms":[
             "Android"
@@ -98,6 +107,9 @@
 
         "genre":"Hyper Casual",
 
+        "projectType": "client",
+        "client": "White Designers Studios",
+
         "platforms":[
             "Android"
         ],
@@ -127,6 +139,9 @@
         "title":"Hide and Seek",
 
         "genre":"Multiplayer action-shooter",
+
+        "projectType": "client",
+        "client": "White Designers Studios",
 
         "platforms":[
             "Android"
@@ -172,6 +187,9 @@
         "title":"The Skatepark",
 
         "genre":"Open World / Sports",
+
+        "projectType": "client",
+        "client": "White Designers Studios",
 
         "platforms":[
             "WebGL"
@@ -222,6 +240,9 @@
 
         "genre":"Card Game / Casual",
 
+        "projectType": "client",
+        "client": "Unbound Game Studio",
+
         "platforms":[
             "Android"
         ],
@@ -259,6 +280,9 @@
 
         "genre":"Unity Package",
 
+        "projectType": "personal",
+        "client": "",
+
         "platforms":[
             "PC"
         ],
@@ -292,6 +316,9 @@
 
         "genre":"Unity Package",
 
+        "projectType": "personal",
+        "client": "",
+
         "platforms":[
             "PC"
         ],
@@ -324,6 +351,9 @@
         "title":"Simulix",
 
         "genre":"Simulation",
+
+        "projectType": "client",
+        "client": "Apexia Soft",
 
         "platforms":[
             "PC"

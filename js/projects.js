@@ -50,6 +50,16 @@ fetch("data/projects.json")
                             ${project.genre || ""}
                         </div>
 
+                        ${
+                            project.client
+                            ? `<div class="project-client">
+                                    Client: ${project.client}
+                            </div>`
+                            : `<div class="project-personal">
+                                    Personal Project
+                            </div>`
+                        }
+
                         <button class="project-btn">
                             View Project
                         </button>
@@ -351,13 +361,6 @@ function updateGalleryButtons(){
     const maxScroll =
         gallery.scrollWidth - gallery.clientWidth;
 
-
-        console.log(
-    "scrollLeft:", gallery.scrollLeft,
-    "clientWidth:", gallery.clientWidth,
-    "scrollWidth:", gallery.scrollWidth,
-    "maxScroll:", maxScroll
-);
     prevBtn.classList.toggle(
         "disabled",
         gallery.scrollLeft <= 1
