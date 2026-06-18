@@ -66,6 +66,11 @@
         ],
 
         "links":[
+            {
+                "title":"Play on web",
+                "icon":"fas fa-gamepad",
+                "url":"assets/html/Farmand-adpay/index.html"
+            }
         ]
     },
     {
