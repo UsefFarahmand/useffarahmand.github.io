@@ -11318,6 +11318,15 @@ section.resume-section .subheading {
     color:#fff;
 }
 
+.explore-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.explore-btn{
+    margin-left:auto;
+}
+
 @media (max-width:768px){
 
     .explore-item{
