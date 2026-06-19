@@ -12062,3 +12062,57 @@ select.form-control{
     max-width:750px;
 
 }
+
+.exploring-list {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+}
+
+
+.exploring-item {
+
+    display:flex;
+
+    gap:1rem;
+
+    align-items:flex-start;
+
+}
+
+
+.exploring-item i {
+
+    font-size:2rem;
+
+    color:#BC5E38;
+
+    margin-top:.2rem;
+
+}
+
+
+.exploring-item h3 {
+
+    color:#212529;
+
+    margin-bottom:.5rem;
+
+    font-weight:800;
+
+}
+
+
+.exploring-item p {
+
+    color:#6c757d;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
