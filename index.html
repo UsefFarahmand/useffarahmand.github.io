@@ -116,6 +116,7 @@
 
                     </li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recommendations">Recommendations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#exploring">Exploring</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
                 </ul>
@@ -643,7 +644,25 @@
 
         </section>
 
-        
+        <!-- Recommendations Section -->
+
+        <section class="resume-section" id="recommendations">
+
+            <div class="resume-section-content">
+
+                <h2 class="mb-5">Recommendations</h2>
+
+
+                <div class="testimonial-grid" id="recommendationContainer">
+
+                    <!-- JSON data will be loaded here -->
+
+                </div>
+
+
+            </div>
+
+        </section>
 
         <!-- Currently Exploring Section -->
         <section class="resume-section" id="exploring">
@@ -866,5 +885,41 @@
 
         </section>
 
+        <div id="testimonialModal" class="testimonial-modal">
+
+
+            <div class="testimonial-popup">
+
+
+                <button onclick="closeTestimonial()"
+                        class="testimonial-close">
+
+                    X
+
+                </button>
+
+
+                <div class="testimonial-popup-header">
+
+                    <i class="fa-solid fa-quote-left"></i>
+
+                    <div>
+
+                        <h3 id="modalName"></h3>
+
+                        <span id="modalRole"></span>
+
+                    </div>
+
+                </div>
+
+
+                <p id="modalText"></p>
+
+
+            </div>
+
+
+        </div>
     </body>
 </html>
