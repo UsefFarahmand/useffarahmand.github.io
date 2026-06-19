@@ -1,0 +1,25 @@
+[
+    {
+        "title": "The 2018 ICPC Asia Tehran Regional Contest",
+        "organization": "ICPC - International Collegiate Programming Contest",
+        "date": "Dec 2018",
+        "description": "Participated in programming challenges involving algorithms, problem solving and competitive programming.",
+        "certificate": "assets/certificates/icpc-2018.pdf"
+    },
+
+    {
+        "title": "The 2019 ICPC Asia Tehran Regional Contest",
+        "organization": "ICPC - International Collegiate Programming Contest",
+        "date": "Dec 2019",
+        "description": "Participated in competitive programming challenges focused on data structures and algorithms.",
+        "certificate": "assets/certificates/icpc-2019.pdf"
+    },
+
+    {
+        "title": "The 2020 ICPC Asia Tehran Regional Contest",
+        "organization": "ICPC - International Collegiate Programming Contest",
+        "date": "Dec 2020",
+        "description": "Participated in ICPC regional programming competition.",
+        "certificate": "assets/certificates/icpc-2020.pdf"
+    }
+]
