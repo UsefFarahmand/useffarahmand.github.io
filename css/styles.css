@@ -11099,6 +11099,25 @@ section.resume-section .subheading {
     flex-wrap:wrap;
 }
 
+.about-text {
+
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 900px;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.about-text + .about-text {
+    margin-top: 1rem;
+}
+
+.about-text strong {
+    color: #d9784f;
+    font-weight: 800;
+    text-shadow: 0 0 8px rgba(188, 94, 56, 0.25);
+}
+
 .social-icon{
     display: inline-flex;
     align-items: center;
