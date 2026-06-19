@@ -11469,7 +11469,7 @@ body{
     gap:80px;
 }
 
-/* CENTER */
+/* LEFT */
 
 .contact-info,
 .contact-form{
@@ -11498,6 +11498,12 @@ body{
     border-radius:50px;
 
     margin-bottom:25px;
+}
+
+.contact-description {
+    line-height: 1.8;
+    max-width: 450px;
+    text-align: justify;
 }
 
 .contact-info p{
