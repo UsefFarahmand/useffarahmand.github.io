@@ -11969,3 +11969,96 @@ select.form-control{
     font-weight:800;
 
 }
+
+.timeline {
+
+    position:relative;
+
+    margin-left:1rem;
+
+}
+
+
+.timeline::before {
+
+    content:"";
+
+    position:absolute;
+
+    left:8px;
+
+    top:0;
+
+    height:100%;
+
+    width:2px;
+
+    background:#BC5E38;
+
+}
+
+
+
+.timeline-item {
+
+    position:relative;
+
+    padding-left:3rem;
+
+    margin-bottom:2.5rem;
+
+}
+
+
+
+.timeline-dot {
+
+    position:absolute;
+
+    left:0;
+
+    top:5px;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:#BC5E38;
+
+}
+
+
+
+.timeline-content span {
+
+    color:#BC5E38;
+
+    font-weight:800;
+
+}
+
+
+
+.timeline-content h3 {
+
+    color:#212529;
+
+    margin:.4rem 0;
+
+    font-weight:800;
+
+}
+
+
+
+.timeline-content p {
+
+    color:#6c757d;
+
+    line-height:1.7;
+
+    max-width:750px;
+
+}
