@@ -11060,11 +11060,9 @@ p.lead {
 section.resume-section {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding: 5rem 1rem;
+  width: 100%;
+  max-width: none;
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -11632,8 +11630,9 @@ body{
 /* CONTACT CARD */
 
 .resume-section-content{
-    max-width: 700px;
-    margin: auto;
+    width:100%;
+    max-width:1200px;
+    margin:auto;
 }
 
 #contactForm{
