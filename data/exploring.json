@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Advanced Unity Development",
+        "icon": "fa-solid fa-wand-magic-sparkles",
+        "description": "Exploring advanced gameplay systems, architecture and optimization techniques."
+    },
+
+    {
+        "title": "Technical Art",
+        "icon": "fa-solid fa-code",
+        "description": "Improving skills in shaders, animation workflows and visual effects."
+    },
+
+    {
+        "title": "VR & AR Experiences",
+        "icon": "fa-solid fa-vr-cardboard",
+        "description": "Experimenting with immersive interactive experiences."
+    },
+
+    {
+        "title": "Game Design & Writing",
+        "icon": "fa-solid fa-book-open",
+        "description": "Developing storytelling skills and writing about game development."
+    }
+]
