@@ -11164,7 +11164,7 @@ section.resume-section .subheading {
 }
 
 .download-btn:hover {
-    background-color: #FF4D62;
+    background-color: #d9784f;
     color: white;
 }
 
@@ -12189,6 +12189,8 @@ select.form-control{
 
     transition:.3s ease;
 
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px;
+
 }
 
 
@@ -12351,6 +12353,8 @@ select.form-control{
     border-radius:18px;
 
     transition:.3s ease;
+
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px;
 
 }
 
