@@ -1,0 +1,125 @@
+[
+    {
+        "company": "White Designers Studios",
+        "linkedin": "https://www.linkedin.com/company/wdstudios/posts/?feedView=all",
+        "role": "Game Programmer Intern",
+        "type": "Internship",
+        "date": "Feb 2021 - Apr 2021",
+        "location": "On-site",
+        "description": "Started professional game development journey by working on gameplay programming and learning production workflows.",
+        "skills": [
+            "Unity",
+            "C#",
+            "Game Development"
+        ]
+    },
+
+    {
+        "company": "White Designers Studios",
+        "linkedin": "https://www.linkedin.com/company/wdstudios/posts/?feedView=all",
+        "role": "Junior Game Programmer",
+        "type": "Full-time",
+        "date": "Apr 2021 - Mar 2022",
+        "location": "On-site",
+        "description": "Developed Android games, implemented gameplay mechanics, UI systems and interactive features using Unity and C#.",
+        "skills": [
+            "Unity",
+            "C#",
+            "Gameplay Programming",
+            "Mobile Games"
+        ]
+    },
+
+    {
+        "company": "White Designers Studios",
+        "linkedin": "https://www.linkedin.com/company/wdstudios/posts/?feedView=all",
+        "role": "Junior Technical Artist",
+        "type": "Full-time",
+        "date": "Feb 2022 - Oct 2022",
+        "location": "On-site",
+        "description": "Worked on technical art pipelines, character animations, game mechanics, tools and asset workflows.",
+        "skills": [
+            "Technical Animator",
+            "Animation",
+            "VFX",
+            "Shaders"
+        ]
+    },
+
+    {
+        "company": "Unbound Game Studio",
+        "linkedin": "https://www.linkedin.com/company/unboundgamestudio2/",
+        "role": "Game Developer",
+        "type": "Full-time",
+        "date": "Dec 2022 - Nov 2024",
+        "location": "Remote | İzmir, Türkiye",
+        "description": "Developed mobile games, created gameplay systems, integrated SDKs, monetization tools and improved Unity project performance.",
+        "skills": [
+            "Unity",
+            "C#",
+            "Mobile Games",
+            "UI Programming"
+        ]
+    },
+
+    {
+        "company": "Hamrahe Aval (MCI)",
+        "linkedin": "https://www.linkedin.com/company/hamraheaval/",
+        "role": "Virtual Reality Developer",
+        "type": "Part-time",
+        "date": "Jan 2024 - Mar 2024",
+        "location": "Remote",
+        "description": "Developed interactive VR and AR experiences using Unity.",
+        "skills": [
+            "Virtual Reality (VR)",
+            "Augmented Reality (AR)",
+            "Unity"
+        ]
+    },
+
+    {
+        "company": "Apexia Soft",
+        "linkedin": "https://www.linkedin.com/company/apexiasoft/posts/?feedView=all",
+        "role": "Unity 3D Developer",
+        "type": "Part-time",
+        "date": "Jan 2024 - Dec 2024",
+        "location": "Remote | Dubai, United Arab Emirates",
+        "description": "Worked on Unity projects, implemented gameplay features, integrated SDKs and optimized applications.",
+        "skills": [
+            "Unity",
+            "C#",
+            "Gameplay Systems"
+        ]
+    },
+
+    {
+        "company": "Content Creator & Game Industry Blogger",
+        "linkedin": "https://www.linkedin.com/company/jolly-panda/?viewAsMember=true",
+        "role": "Game Developer Content Creator",
+        "type": "Self-employed",
+        "date": "Jun 2024 - Present",
+        "location": "Remote",
+        "description": "Creating game development content, writing articles, sharing insights and educational content about the game industry.",
+        "skills": [
+            "Content Creation",
+            "Blogging",
+            "Storytelling",
+            "Social Media Management"
+        ]
+    },
+
+    {
+        "company": "Jolly Panda",
+        "linkedin": "https://www.linkedin.com/company/jolly-panda/?viewAsMember=true",
+        "role": "Founder | Designing Joyful Digital Worlds",
+        "type": "Full-time",
+        "date": "Jun 2026 - Present",
+        "location": "On-site",
+        "description": "Founder of Jolly Panda, a creative game and app studio focused on building joyful digital experiences.",
+        "skills": [
+            "Team Management",
+            "Game Development",
+            "Creative Direction"
+        ]
+    }
+]

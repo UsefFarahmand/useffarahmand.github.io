@@ -11346,6 +11346,35 @@ section.resume-section .subheading {
     margin-left:auto;
 }
 
+.experience-skills{
+
+    margin-top:1rem;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.5rem;
+
+}
+
+
+.experience-skills span{
+
+    background:#f8f9fa;
+
+    color:#BC5E38;
+
+    border-radius:999px;
+
+    padding:.3rem .8rem;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
 @media (max-width:768px){
 
     .explore-item{
@@ -12060,6 +12089,23 @@ select.form-control{
     line-height:1.7;
 
     max-width:750px;
+
+}
+
+.timeline-content h4 a{
+
+    color:#BC5E38;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+.timeline-content h4 a:hover{
+
+    text-decoration:underline;
 
 }
 
