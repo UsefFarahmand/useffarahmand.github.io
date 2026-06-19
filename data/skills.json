@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Game Development",
+        "icon": "fa-brands fa-unity",
+        "description": "Unity, C#, Gameplay Systems, Mobile & PC Games"
+    },
+
+    {
+        "title": "Technical Art",
+        "icon": "fa-solid fa-palette",
+        "description": "Technical Animation, VFX, Shaders, Tools & Art Pipelines"
+    },
+
+    {
+        "title": "UI & UX",
+        "icon": "fa-solid fa-window-maximize",
+        "description": "User Interface Programming, UI Systems & User Experience"
+    },
+
+    {
+        "title": "Writing & Content",
+        "icon": "fa-solid fa-pen-nib",
+        "description": "Game Design Ideas, Storytelling, Blogging & Articles"
+    },
+
+    {
+        "title": "Tools & Engines",
+        "icon": "fa-solid fa-gears",
+        "description": "Unity, Godot, Cocos Creator, VR & AR Development"
+    },
+
+    {
+        "title": "Professional Skills",
+        "icon": "fa-solid fa-users",
+        "description": "Team Management, Content Creation, Social Media Management"
+    }
+]
