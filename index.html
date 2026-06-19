@@ -244,54 +244,127 @@
         </section>
 
         <!-- Contact Me Section-->
-        <section class="resume-section" id="contact">
-            <div class="resume-section-content">
-                <h2 class="mb-0">Contact Me</h2>
-                <div class="subheading">Get in Touch</div>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="firstName" class="form-control" placeholder="First name*" required />
+        <section class="contact">
+
+            <div class="contact-wrapper">
+
+                <!-- Left Side -->
+                <div class="contact-info">
+
+                    <h2>Let's Work Together!</h2>
+
+                    <div class="line"></div>
+
+                    <p>
+                        Have a project in mind or want to collaborate?
+                        Feel free to reach out.
+                    </p>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+
+                        <div>
+                            <h4>Game Developer</h4>
+                            <span>Unity & Technical Artist</span>
+                        </div>
                     </div>
-                
-                    <div class="form-group">
-                        <input type="text" id="lastName" class="form-control" placeholder="Last Name*" required />
+                    
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contact@useffarahmand.com">
+                                contact@useffarahmand.com
+                            </a>
+                        </div>
                     </div>
-                
-                    <div class="form-group">
-                        <input type="email" id="emailAddress" class="form-control" placeholder="Email address*" required />
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/useffarahmand" target="_blank">
+                                linkedin.com/in/useffarahmand
+                            </a>
+                        </div>
                     </div>
-                
-                    <div class="form-group">
-                        <select id="jobRole" class="form-control">
-                            <option value="" disabled selected hidden>Job role</option>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/useffarahmand"
+                            target="_blank">
+                                github.com/useffarahmand
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form">
+
+                    <h3>Send a Message</h3>
+
+                    <input type="text"
+                            id="firstName"
+                            placeholder="First Name*"
+                            required>
+
+                        <input type="text"
+                            id="lastName"
+                            placeholder="Last Name*"
+                            required>
+
+                        <input type="email"
+                            id="emailAddress"
+                            placeholder="Email Address*"
+                            required>
+
+                        <select id="jobRole">
+                            <option value="" disabled selected hidden>
+                                Job Role
+                            </option>
                             <option value="Developer">Developer</option>
                             <option value="Designer">Designer</option>
                             <option value="Manager">Manager</option>
                             <option value="Other">Other</option>
                         </select>
-                    </div>
-                
-                    <div class="form-group">
-                        <input type="url" id="socialLink" class="form-control" placeholder="GitHub or LinkedIn address" />
-                    </div>
-                
-                    <div class="form-group">
-                        <textarea id="message" class="form-control" rows="4" placeholder="Message"></textarea>
-                        <div class="char-counter"><span id="charCount">0</span>/500 characters</div>
-                    </div>
 
-                    <div class="section">
-                        <button id="btn" type="btn-submit">
-                          <p id="btnText">Submit</p>
-                          <div class="checked">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
-                            </svg>
-                          </div>
+                        <input type="url"
+                            id="socialLink"
+                            placeholder="GitHub or LinkedIn Address">
+
+                        <textarea id="message"
+                                rows="5"
+                                maxlength="500"
+                                placeholder="Message"></textarea>
+
+                        <div class="char-counter">
+                            <span id="charCount">0</span>/500 characters
+                        </div>
+
+                        <button id="btn" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
                         </button>
-                      </div>
-                </form>
+
+                </div>
+
             </div>
+
         </section>
 
     </body>
