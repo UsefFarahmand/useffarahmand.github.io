@@ -167,3 +167,37 @@ if(myWorkBtn){
     });
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const exploreSection = document.querySelector("#explore");
+    const navDropdown = document.querySelector(".nav-dropdown");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    // رسیدن به My Work
+                    navDropdown.classList.add("open");
+
+                } else {
+
+                    // خروج از My Work
+                    navDropdown.classList.remove("open");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.4
+        }
+    );
+
+    observer.observe(exploreSection);
+
+});
