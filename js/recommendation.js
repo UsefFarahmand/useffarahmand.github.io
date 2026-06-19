@@ -1,7 +1,7 @@
 let testimonials = [];
 
 
-fetch("data/testimonials.json")
+fetch("data/recommendation.json")
 
 .then(response => response.json())
 
