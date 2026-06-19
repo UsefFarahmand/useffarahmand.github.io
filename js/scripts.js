@@ -201,3 +201,20 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(exploreSection);
 
 });
+
+function openCertificate(file){
+
+    document.getElementById("pdfFrame").src = file;
+
+    document.getElementById("pdfViewer").style.display = "flex";
+
+}
+
+
+function closeCertificate(){
+
+    document.getElementById("pdfViewer").style.display = "none";
+
+    document.getElementById("pdfFrame").src = "";
+
+}

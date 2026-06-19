@@ -12116,3 +12116,206 @@ select.form-control{
     margin:0;
 
 }
+.achievement-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+
+.achievement-card {
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:260px;
+
+    padding:1.5rem;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    transition:.3s ease;
+
+}
+
+
+.achievement-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,.08);
+
+}
+
+
+.achievement-title {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    margin-bottom:.8rem;
+
+}
+
+.achievement-title i {
+
+    color:#BC5E38;
+
+    font-size:1.8rem;
+
+}
+
+
+.achievement-title h3 {
+
+    color:#212529;
+
+    margin:0;
+
+    font-weight:800;
+
+    font-size:1.1rem;
+
+}
+
+
+.achievement-year {
+
+    color:#BC5E38;
+
+    font-weight:800;
+
+    margin-bottom:.8rem;
+
+}
+
+
+.achievement-card p {
+
+    color:#6c757d;
+
+    line-height:1.7;
+
+    text-align:justify;
+
+    flex-grow:1;
+
+}
+
+
+.certificate-btn{
+
+    display:inline-block;
+
+    padding:.75rem 1.5rem;
+
+    border-radius:999px;
+
+    background:#495057;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.2s ease;
+
+    align-self:flex-end;
+
+}
+
+
+.certificate-btn:hover{
+
+    background:#bd5d38;
+
+    color:#fff;
+
+}
+
+.pdf-modal {
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    z-index:9999;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.pdf-container {
+
+    width:85%;
+
+    height:90%;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+.pdf-container iframe {
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+}
+
+
+.pdf-close {
+
+    position:absolute;
+
+    right:15px;
+
+    top:10px;
+
+    z-index:2;
+
+    width:35px;
+
+    height:35px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#495057;
+
+    color:#fff;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+}
