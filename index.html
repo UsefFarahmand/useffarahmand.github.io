@@ -443,48 +443,69 @@
 
                     <h3>Send a Message</h3>
 
-                    <input type="text"
-                            id="firstName"
-                            placeholder="First Name*"
-                            required>
+                    <div class="name-row">
+                        <input type="text"
+                                id="firstName"
+                                placeholder="First Name*"
+                                required>
 
                         <input type="text"
-                            id="lastName"
-                            placeholder="Last Name*"
-                            required>
+                                id="lastName"
+                                placeholder="Last Name*"
+                                required>
+                    </div>
 
-                        <input type="email"
-                            id="emailAddress"
-                            placeholder="Email Address*"
-                            required>
+                    <input type="email"
+                        id="emailAddress"
+                        placeholder="Email Address*"
+                        required>
+                    <span class="field-error" id="emailError"></span>
 
-                        <select id="jobRole">
-                            <option value="" disabled selected hidden>
-                                Job Role
-                            </option>
-                            <option value="Developer">Developer</option>
-                            <option value="Designer">Designer</option>
-                            <option value="Manager">Manager</option>
-                            <option value="Other">Other</option>
+                    <div class="phone-row">
+                        <select id="countryCode">
                         </select>
+                        <input type="tel"
+                            id="phoneNumber"
+                            placeholder="Phone Number (optional)">
+                    </div>
+                    <span class="field-error" id="phoneError"></span>
 
-                        <input type="url"
-                            id="socialLink"
-                            placeholder="GitHub or LinkedIn Address">
+                    <select id="messageTitle">
+                        <option value="" disabled selected hidden>
+                            Title*
+                        </option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Project Inquiry">Project Inquiry</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-                        <textarea id="message"
-                                rows="5"
-                                maxlength="500"
-                                placeholder="Message"></textarea>
+                    <input type="text"
+                        id="customTitle"
+                        placeholder="Write your title here..."
+                        style="display:none;">
 
-                        <div class="char-counter">
-                            <span id="charCount">0</span>/500 characters
-                        </div>
+                    <textarea id="message"
+                            rows="5"
+                            maxlength="500"
+                            placeholder="Message"></textarea>
 
-                        <button id="btn" type="submit">
+                    <div class="char-counter">
+                        <span id="charCount">500</span>/500 characters remaining
+                    </div>
+
+                    <button id="btn" type="button" onclick="handleSubmit()">
+                        <span id="btnText">
                             <i class="fa-solid fa-paper-plane"></i>
                             Send Message
-                        </button>
+                        </span>
+                        <div class="checked">
+                            <svg viewBox="0 0 50 50">
+                                <path fill="none" d="M 0 25 L 20 42 L 50 8"/>
+                            </svg>
+                        </div>
+                    </button>
 
                 </div>
 
@@ -527,6 +548,20 @@
             </div>
 
 
+        </div>
+
+        <!-- Success Popup -->
+        <div id="successPopup">
+            <div class="success-popup-box">
+                <div class="success-popup-icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3>Message Sent!</h3>
+                <p>Thanks for reaching out. I'll get back to you as soon as possible.</p>
+                <button class="success-popup-close" onclick="closeSuccessPopup()">
+                    Got it!
+                </button>
+            </div>
         </div>
 
         <!-- Bootstrap core JS-->

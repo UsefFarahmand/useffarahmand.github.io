@@ -406,7 +406,7 @@ select.form-control{
 .contact-form select {
     width: 100%;
     padding: 14px 16px;
-    border: none;
+    border: 1px solid #ddd;
     outline: none;
     border-radius: 12px;
     font-size: 1rem;
@@ -432,4 +432,188 @@ select.form-control{
 .info-item a:hover {
     color: #BC5E38;
     text-decoration: underline;
+}
+
+/* ---- Name row ---- */
+.name-row { display: flex; gap: 1rem; }
+.name-row input { flex: 1; }
+
+/* ---- Phone row ---- */
+/* ---- Phone row ---- */
+.phone-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    direction: ltr !important;
+}
+
+.phone-row #countryCode {
+    width: 148px !important;
+    max-width: 148px !important;
+    flex: 0 0 148px !important;
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.phone-row #phoneNumber {
+    width: 0 !important;
+    flex: 1 1 auto !important;
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.phone-row select {
+    width: 148px;
+    flex-shrink: 0;
+    height: 58px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    outline: none;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color .3s;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.phone-row select:focus { border-color: #BC5E38; }
+.phone-row input {
+    flex: 1;
+    height: 58px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+/* Make all contact-form inputs/selects 58px tall */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    height: 58px;
+    box-sizing: border-box;
+}
+.contact-form textarea { height: 160px; }
+
+/* ---- Field errors ---- */
+.field-error {
+    display: none;
+    color: #dc3545;
+    font-size: 0.8em;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+.field-error.visible { display: block; }
+.is-invalid { border-color: #dc3545 !important; }
+
+/* ---- Success popup ---- */
+#successPopup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(4px);
+}
+#successPopup.show { display: flex; }
+.success-popup-box {
+    background: #fff;
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,.2);
+    animation: popIn .35s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes popIn {
+    from { transform: scale(.7); opacity: 0; }
+    to   { transform: scale(1);  opacity: 1; }
+}
+.success-popup-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #BC5E38, #A14F2E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(188,94,56,.35);
+}
+.success-popup-box h3 {
+    color: #212529;
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+.success-popup-box p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+}
+.success-popup-close {
+    display: inline-block;
+    padding: .75rem 2rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #BC5E38, #A14F2E);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .2s;
+    box-shadow: 0 8px 20px rgba(188,94,56,.3);
+}
+.success-popup-close:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(188,94,56,.4);
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 576px) {
+
+    .phone-row {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .phone-row #countryCode {
+        width: 110px !important;
+        max-width: 110px !important;
+        flex-basis: 110px !important;
+    }
+
+    .phone-row #phoneNumber {
+        width: 0 !important;
+        flex: 1 !important;
+    }
+
+}
+
+.phone-row #phoneNumber {
+    width: 0;
+}
+
+/* Force phone layout: country code always left */
+.phone-row {
+    direction: ltr !important;
+}
+
+.phone-row #countryCode {
+    direction: ltr;
+    text-align: center;
+}
+
+.phone-row #phoneNumber {
+    direction: ltr;
+    text-align: left;
 }
