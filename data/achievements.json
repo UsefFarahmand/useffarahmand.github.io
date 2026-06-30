@@ -1,25 +1,29 @@
 [
     {
         "title": "The 2018 ICPC Asia Tehran Regional Contest",
+        "title_fa": "مسابقه منطقه‌ای ICPC آسیا تهران ۲۰۱۸",
         "organization": "ICPC - International Collegiate Programming Contest",
         "date": "Dec 2018",
         "description": "Participated in programming challenges involving algorithms, problem solving and competitive programming.",
+        "description_fa": "شرکت در چالش‌های برنامه‌نویسی شامل الگوریتم‌ها، حل مسئله و برنامه‌نویسی رقابتی.",
         "certificate": "assets/certificates/icpc-2018.pdf"
     },
-
     {
         "title": "The 2019 ICPC Asia Tehran Regional Contest",
+        "title_fa": "مسابقه منطقه‌ای ICPC آسیا تهران ۲۰۱۹",
         "organization": "ICPC - International Collegiate Programming Contest",
         "date": "Dec 2019",
         "description": "Participated in competitive programming challenges focused on data structures and algorithms.",
+        "description_fa": "شرکت در چالش‌های برنامه‌نویسی رقابتی با تمرکز بر ساختارهای داده و الگوریتم‌ها.",
         "certificate": "assets/certificates/icpc-2019.pdf"
     },
-
     {
         "title": "The 2020 ICPC Asia Tehran Regional Contest",
+        "title_fa": "مسابقه منطقه‌ای ICPC آسیا تهران ۲۰۲۰",
         "organization": "ICPC - International Collegiate Programming Contest",
         "date": "Dec 2020",
         "description": "Participated in ICPC regional programming competition.",
+        "description_fa": "شرکت در مسابقه منطقه‌ای برنامه‌نویسی ICPC.",
         "certificate": "assets/certificates/icpc-2020.pdf"
     }
 ]

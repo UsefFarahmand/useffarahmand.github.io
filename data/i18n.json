@@ -1,0 +1,262 @@
+{
+  "en": {
+    "lang": "en",
+    "dir": "ltr",
+    "langToggleLabel": "فارسی",
+    "langToggleTitle": "Switch to Persian",
+    "nav": {
+      "about": "About",
+      "experience": "Experience",
+      "achievements": "Achievements",
+      "myWork": "My Work",
+      "projects": "Projects",
+      "articles": "Articles",
+      "gameHub": "Game Hub",
+      "skills": "Skills",
+      "recommendations": "Recommendations",
+      "exploring": "Exploring",
+      "contact": "Contact Me"
+    },
+    "about": {
+      "name": "Usef",
+      "lastName": "Farahmand",
+      "subtitle": "Unity Developer & Technical Artist",
+      "bio1": "I am a <strong>Game Developer</strong>, <strong>Technical Artist</strong>, and <strong>Game Writer</strong> passionate about creating interactive experiences that combine technology, art, and storytelling. I specialize in Unity development, technical animation, gameplay systems, and creating engaging narratives for games.",
+      "bio2": "Since starting my journey in 2020, I have worked on various <strong>Android and PC projects</strong>, combining programming, animation, and creative writing to bring ideas to life. Through my articles and blog posts, I explore topics related to <strong>game development</strong>, design, and the creative process behind building games, while continuously improving my skills with tools like <strong>Unity</strong>, <strong>Godot</strong>, and <strong>Cocos Creator</strong>.",
+      "downloadCV": "Download CV",
+      "cvFile": "assets/PDF/Usef Farahmand CV.pdf",
+      "cvFileName": "Usef Farahmand CV.pdf"
+    },
+    "experience": {
+      "sectionTitle": "Experience & Journey",
+      "present": "Present"
+    },
+    "achievements": {
+      "sectionTitle": "Achievements",
+      "viewCertificate": "View Certificate"
+    },
+    "explore": {
+      "sectionTitle": "Explore My Work",
+      "projects": {
+        "title": "Projects",
+        "description": "Explore my games, prototypes, game jams and development projects.",
+        "btn": "View Projects"
+      },
+      "articles": {
+        "title": "Articles",
+        "description": "Read my articles about game development, design and technical art.",
+        "btn": "Read Articles"
+      },
+      "gameHub": {
+        "title": "Game Hub",
+        "description": "Play my web games, prototypes and interactive experiments.",
+        "btn": "Enter Game Hub"
+      }
+    },
+    "skills": {
+      "sectionTitle": "Skills"
+    },
+    "recommendations": {
+      "sectionTitle": "Recommendations",
+      "readMore": "... Read More",
+      "viewProfile": "View Profile"
+    },
+    "exploring": {
+      "sectionTitle": "Currently Exploring"
+    },
+    "contact": {
+      "sectionTitle": "Let's Work Together!",
+      "description": "Have a game idea or a creative project in mind?<br>Let's collaborate and bring your vision to life.",
+      "emailLabel": "Email",
+      "linkedinLabel": "LinkedIn",
+      "githubLabel": "GitHub",
+      "articlesLabel": "Articles",
+      "formTitle": "Send a Message",
+      "firstName": "First Name*",
+      "lastName": "Last Name*",
+      "emailAddress": "Email Address*",
+      "phoneNumber": "Phone Number (optional)",
+      "titlePlaceholder": "Title*",
+      "titleOptions": {
+        "jobOpportunity": "Job Opportunity",
+        "collaboration": "Collaboration",
+        "projectInquiry": "Project Inquiry",
+        "feedback": "Feedback",
+        "other": "Other"
+      },
+      "customTitlePlaceholder": "Write your title here...",
+      "messagePlaceholder": "Message",
+      "charsRemaining": "characters remaining",
+      "sendMessage": "Send Message",
+      "sending": "Sending…"
+    },
+    "successPopup": {
+      "title": "Message Sent!",
+      "body": "Thanks for reaching out. I'll get back to you as soon as possible.",
+      "gotIt": "Got it!"
+    },
+    "errors": {
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidPhone": "Digits only, 5–15 characters.",
+      "submissionFailed": "Submission failed, please try again."
+    },
+    "pages": {
+      "articles": {
+        "title": "Articles",
+        "subtitle": "Thoughts on game development, technical art and game design.",
+        "readOnMedium": "Read on Medium",
+        "readOnLinkedIn": "Read on LinkedIn",
+        "readOnDevTo": "Read on Dev.to",
+        "openPDF": "Open PDF",
+        "readArticle": "Read Article"
+      },
+      "projects": {
+        "title": "Projects",
+        "subtitle": "A collection of games, tools and technical experiments I have worked on.",
+        "gameHubTitle": "Game Hub",
+        "gameHubDesc": "Play my web games, prototypes and interactive experiments.",
+        "gameHubBtn": "Enter Game Hub",
+        "viewProject": "View Project",
+        "personalProject": "Personal Project",
+        "client": "Client",
+        "aboutProject": "About this project",
+        "releasedOn": "Released on",
+        "lastUpdate": "Last update",
+        "logoAlt": "Logo"
+      }
+    },
+    "sideNav": {
+      "brandName": "Usef Farahmand"
+    }
+  },
+  "fa": {
+    "lang": "fa",
+    "dir": "rtl",
+    "langToggleLabel": "English",
+    "langToggleTitle": "Switch to English",
+    "nav": {
+      "about": "درباره",
+      "experience": "تجربیات",
+      "achievements": "دستاوردها",
+      "myWork": "کارهای من",
+      "projects": "پروژه‌ها",
+      "articles": "مقالات",
+      "gameHub": "گیم‌هاب",
+      "skills": "مهارت‌ها",
+      "recommendations": "توصیه‌نامه‌ها",
+      "exploring": "کاوش‌ها",
+      "contact": "تماس با من"
+    },
+    "about": {
+      "name": "یوسف",
+      "lastName": "فرهمند",
+      "subtitle": "توسعه‌دهنده Unity و هنرمند فنی",
+      "bio1": "من یک <strong>توسعه‌دهنده بازی</strong>، <strong>هنرمند فنی</strong> و <strong>نویسنده بازی</strong> هستم که به ایجاد تجربه‌های تعاملی ترکیب‌کننده فناوری، هنر و داستان‌سرایی علاقه‌مند است. تخصص من در توسعه Unity، انیمیشن فنی، سیستم‌های گیم‌پلی و روایت‌های جذاب برای بازی‌هاست.",
+      "bio2": "از آغاز مسیرم در سال ۱۳۹۹، روی پروژه‌های متعدد <strong>اندروید و PC</strong> کار کرده‌ام و با ترکیب برنامه‌نویسی، انیمیشن و نوشتن خلاقانه، ایده‌ها را به واقعیت تبدیل کرده‌ام. از طریق مقالات و وبلاگم، موضوعات مربوط به <strong>توسعه بازی</strong>، طراحی و فرآیند خلاقانه ساخت بازی را بررسی می‌کنم و مهارت‌هایم را با ابزارهایی مثل <strong>Unity</strong>، <strong>Godot</strong> و <strong>Cocos Creator</strong> مداوم ارتقاء می‌دهم.",
+      "downloadCV": "دانلود رزومه",
+      "cvFile": "assets/PDF/Usef Farahmand CV (Persian).pdf",
+      "cvFileName": "رزومه یوسف فرهمند.pdf"
+    },
+    "experience": {
+      "sectionTitle": "تجربیات و مسیر شغلی",
+      "present": "اکنون"
+    },
+    "achievements": {
+      "sectionTitle": "دستاوردها",
+      "viewCertificate": "مشاهده گواهینامه"
+    },
+    "explore": {
+      "sectionTitle": "کارهای من را کاوش کنید",
+      "projects": {
+        "title": "پروژه‌ها",
+        "description": "بازی‌ها، نمونه‌کارها، گیم‌جم‌ها و پروژه‌های توسعه‌ام را ببینید.",
+        "btn": "مشاهده پروژه‌ها"
+      },
+      "articles": {
+        "title": "مقالات",
+        "description": "مقاله‌های من درباره توسعه بازی، طراحی و هنر فنی را بخوانید.",
+        "btn": "خواندن مقالات"
+      },
+      "gameHub": {
+        "title": "گیم‌هاب",
+        "description": "بازی‌های وب، نمونه‌کارها و آزمایش‌های تعاملی‌ام را تجربه کنید.",
+        "btn": "ورود به گیم‌هاب"
+      }
+    },
+    "skills": {
+      "sectionTitle": "مهارت‌ها"
+    },
+    "recommendations": {
+      "sectionTitle": "توصیه‌نامه‌ها",
+      "readMore": "... بیشتر بخوانید",
+      "viewProfile": "مشاهده پروفایل"
+    },
+    "exploring": {
+      "sectionTitle": "در حال کاوش"
+    },
+    "contact": {
+      "sectionTitle": "بیایید با هم کار کنیم!",
+      "description": "ایده‌ای برای بازی یا پروژه‌ای خلاقانه دارید؟<br>بیایید همکاری کنیم و رویایتان را به واقعیت تبدیل کنیم.",
+      "emailLabel": "ایمیل",
+      "linkedinLabel": "لینکدین",
+      "githubLabel": "گیت‌هاب",
+      "articlesLabel": "مقالات",
+      "formTitle": "ارسال پیام",
+      "firstName": "نام*",
+      "lastName": "نام خانوادگی*",
+      "emailAddress": "آدرس ایمیل*",
+      "phoneNumber": "شماره تلفن (اختیاری)",
+      "titlePlaceholder": "موضوع*",
+      "titleOptions": {
+        "jobOpportunity": "فرصت شغلی",
+        "collaboration": "همکاری",
+        "projectInquiry": "استعلام پروژه",
+        "feedback": "بازخورد",
+        "other": "سایر"
+      },
+      "customTitlePlaceholder": "موضوع خود را بنویسید...",
+      "messagePlaceholder": "پیام",
+      "charsRemaining": "کاراکتر باقی‌مانده",
+      "sendMessage": "ارسال پیام",
+      "sending": "در حال ارسال…"
+    },
+    "successPopup": {
+      "title": "پیام ارسال شد!",
+      "body": "ممنون که با من در تماس بودید. در اسرع وقت پاسخ خواهم داد.",
+      "gotIt": "متوجه شدم!"
+    },
+    "errors": {
+      "invalidEmail": "لطفاً یک آدرس ایمیل معتبر وارد کنید.",
+      "invalidPhone": "فقط اعداد، ۵ تا ۱۵ کاراکتر.",
+      "submissionFailed": "ارسال ناموفق بود، لطفاً دوباره امتحان کنید."
+    },
+    "pages": {
+      "articles": {
+        "title": "مقالات",
+        "subtitle": "نوشته‌هایی درباره توسعه بازی، هنر فنی و طراحی بازی.",
+        "readOnMedium": "خواندن در Medium",
+        "readOnLinkedIn": "خواندن در LinkedIn",
+        "readOnDevTo": "خواندن در Dev.to",
+        "openPDF": "باز کردن PDF",
+        "readArticle": "خواندن مقاله"
+      },
+      "projects": {
+        "title": "پروژه‌ها",
+        "subtitle": "مجموعه‌ای از بازی‌ها، ابزارها و آزمایش‌های فنی که روی آن‌ها کار کرده‌ام.",
+        "gameHubTitle": "گیم‌هاب",
+        "gameHubDesc": "بازی‌های وب، نمونه‌کارها و آزمایش‌های تعاملی‌ام را تجربه کنید.",
+        "gameHubBtn": "ورود به گیم‌هاب",
+        "viewProject": "مشاهده پروژه",
+        "personalProject": "پروژه شخصی",
+        "client": "کارفرما",
+        "aboutProject": "درباره این پروژه",
+        "releasedOn": "منتشر شده در",
+        "lastUpdate": "آخرین به‌روزرسانی",
+        "logoAlt": "لوگو"
+      }
+    },
+    "sideNav": {
+      "brandName": "Usef Farahmand"
+    }
+  }
+}

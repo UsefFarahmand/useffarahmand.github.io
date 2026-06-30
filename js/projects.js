@@ -1,378 +1,284 @@
-const projectsGrid = document.getElementById("projects-grid");
+/* ================================================
+   projects.js  —  Renders Projects page
+   i18n-aware: uses window.getCurrentLang()
+================================================ */
 
-const overlay = document.getElementById("project-overlay");
+const projectsGrid  = document.getElementById('projects-grid');
+const overlay       = document.getElementById('project-overlay');
+const overlayTitle  = document.getElementById('overlay-title');
+const overlayLogo   = document.getElementById('overlay-logo');
+const overlayGenre  = document.getElementById('overlay-genre');
+const overlayDescription = document.getElementById('overlay-description');
+const overlayGallery = document.getElementById('overlay-gallery');
+const overlayLinks  = document.getElementById('overlay-links');
+const gallery       = document.getElementById('overlay-gallery');
+const prevBtn       = document.getElementById('gallery-prev');
+const nextBtn       = document.getElementById('gallery-next');
+const imageViewer   = document.getElementById('image-viewer');
+const viewerContent = document.getElementById('viewer-content');
+const closeImage    = document.getElementById('close-image');
+const closeButton   = document.getElementById('close-overlay');
 
-const overlayTitle = document.getElementById("overlay-title");
-const overlayGenre = document.getElementById("overlay-genre");
-const overlayDescription = document.getElementById("overlay-description");
-const overlayGallery = document.getElementById("overlay-gallery");
-const overlayLinks = document.getElementById("overlay-links");
+let projectsData    = [];
+let currentProject  = null; // tracks the project shown in the overlay, for re-render on language switch
 
-const gallery = document.getElementById("overlay-gallery");
-const prevBtn = document.getElementById("gallery-prev");
-const nextBtn = document.getElementById("gallery-next");
-
-const imageViewer = document.getElementById("image-viewer");
-const viewerContent = document.getElementById("viewer-content");
-const closeImage = document.getElementById("close-image");
-
-const closeButton = document.getElementById("close-overlay");
-
-fetch("data/projects.json")
-    .then(response => response.json())
+fetch('data/projects.json')
+    .then(r => r.json())
     .then(projects => {
-
-        projects
-            .sort((a, b) => {
-
-                const dateA = new Date(a.lastUpdate || a.releaseDate);
-                const dateB = new Date(b.lastUpdate || b.releaseDate);
-
-                return dateB - dateA;
-
-            })
-            .forEach(project => {
-
-                const card = document.createElement("div");
-
-                card.classList.add("project-card");
-
-                card.innerHTML = `
-                    <img src="${project.thumbnail}" alt="${project.title}">
-
-                    <div class="project-content">
-
-                        <h3 class="project-title">
-                            ${project.title}
-                        </h3>
-
-                        <div class="project-genre">
-                            ${project.genre || ""}
-                        </div>
-
-                        ${
-                            project.client
-                            ? `<div class="project-client">
-                                    Client: ${project.client}
-                            </div>`
-                            : `<div class="project-personal">
-                                    Personal Project
-                            </div>`
-                        }
-
-                        <button class="project-btn">
-                            View Project
-                        </button>
-
-                    </div>
-                `;
-
-                card.querySelector(".project-btn")
-                    .addEventListener("click", () => {
-                        openProject(project);
-                    });
-
-                projectsGrid.appendChild(card);
-
-            });
-
+        projects.sort((a, b) => {
+            return new Date(b.lastUpdate || b.releaseDate) - new Date(a.lastUpdate || a.releaseDate);
+        });
+        projectsData = projects;
+        window.renderProjects(window.getCurrentLang ? window.getCurrentLang() : 'en');
     })
-    .catch(error => {
-        console.error("Error loading projects:", error);
+    .catch(err => console.error('projects.js: failed to load data', err));
+
+
+window.renderProjects = function(lang) {
+    if (!projectsGrid || !projectsData.length) return;
+
+    projectsGrid.innerHTML = '';
+
+    const t = window.i18nData ? window.i18nData[lang].pages.projects : {};
+
+    // Page-level text
+    const titleEl    = document.querySelector('.projects-title');
+    const subtitleEl = document.querySelector('.projects-subtitle');
+    if (titleEl)    titleEl.textContent    = t.title    || 'Projects';
+    if (subtitleEl) subtitleEl.textContent = t.subtitle || '';
+
+    // GameHub card translation
+    const ghTitle = document.querySelector('.gamehub-featured .explore-info h3');
+    const ghDesc  = document.querySelector('.gamehub-featured .explore-info p');
+    const ghBtn   = document.querySelector('.gamehub-featured .explore-btn');
+    if (ghTitle) ghTitle.textContent = t.gameHubTitle || 'Game Hub';
+    if (ghDesc)  ghDesc.textContent  = t.gameHubDesc  || '';
+    if (ghBtn)   ghBtn.textContent   = t.gameHubBtn   || 'Enter Game Hub';
+
+    // Section overlay labels
+    const sectionLbl = document.querySelector('.overlay-section-title');
+    if (sectionLbl) sectionLbl.textContent = t.aboutProject || 'About this project';
+
+    const clientLabel    = t.client          || 'Client';
+    const personalLabel  = t.personalProject || 'Personal Project';
+    const viewLabel      = t.viewProject     || 'View Project';
+
+    projectsData.forEach(project => {
+        const title  = (lang === 'fa' && project.title_fa)  ? project.title_fa  : project.title;
+        const genre  = (lang === 'fa' && project.genre_fa)  ? project.genre_fa  : (project.genre || '');
+        const client = (lang === 'fa' && project.client_fa) ? project.client_fa : project.client;
+
+        const card = document.createElement('div');
+        card.classList.add('project-card');
+
+        card.innerHTML = `
+            <img src="${project.thumbnail}" alt="${title}">
+            <div class="project-content">
+                <h3 class="project-title">${title}</h3>
+                <div class="project-genre">${genre}</div>
+                ${client
+                    ? `<div class="project-client">${clientLabel}: ${client}</div>`
+                    : `<div class="project-personal">${personalLabel}</div>`}
+                <button class="project-btn">${viewLabel}</button>
+            </div>
+        `;
+
+        card.querySelector('.project-btn').addEventListener('click', () => openProject(project));
+        projectsGrid.appendChild(card);
     });
 
-function openProject(project){
+    // If the overlay is currently open, refresh its content in the new language
+    if (currentProject && overlay.classList.contains('active')) {
+        populateOverlay(currentProject, lang);
+    }
+};
 
-    overlayTitle.textContent =
-        project.title || "";
 
-    overlayGenre.textContent =
-        project.genre || "";
+function openProject(project) {
+    currentProject = project;
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    populateOverlay(project, lang);
 
-    overlayDescription.textContent =
-        project.description || "";
+    overlay.classList.add('active');
+    gallery.scrollLeft = 0;
+    requestAnimationFrame(updateGalleryButtons);
+    document.body.style.overflow = 'hidden';
+}
 
-    document.getElementById("overlay-banner").style.backgroundImage =
-        `url(${project.thumbnail})`;
 
-    document.getElementById("overlay-platforms").innerHTML =
-        (project.platforms || []).map(platform => {
+function populateOverlay(project, lang) {
+    const t = window.i18nData ? window.i18nData[lang].pages.projects : {};
+    const locale = lang === 'fa' ? 'fa-IR' : 'en-US';
 
-            if(platform === "Android")
-                return '<span><i class="fab fa-android"></i> Android</span>';
+    const title       = (lang === 'fa' && project.title_fa)       ? project.title_fa       : project.title;
+    const genre       = (lang === 'fa' && project.genre_fa)       ? project.genre_fa       : (project.genre || '');
+    const description = (lang === 'fa' && project.description_fa) ? project.description_fa : project.description;
 
-            if(platform === "PC")
-                return '<span><i class="fas fa-desktop"></i> PC</span>';
+    overlayTitle.textContent       = title       || '';
+    overlayGenre.textContent       = genre;
+    overlayDescription.textContent = description || '';
 
-            if(platform === "WebGL")
-                return '<span><i class="fas fa-globe"></i> WebGL</span>';
+    // Banner image — falls back to thumbnail if no dedicated banner is set
+    const bannerImg = project.banner || project.thumbnail || '';
+    document.getElementById('overlay-banner').style.backgroundImage = bannerImg ? `url(${bannerImg})` : 'none';
 
-            if(platform === "iOS")
-                return '<span><i class="fab fa-apple"></i> iOS</span>';
+    // Logo — shown beside the title, left side in English, right side in Persian (handled by CSS row-reverse)
+    if (project.logo) {
+        overlayLogo.src = project.logo;
+        overlayLogo.alt = (t.logoAlt || 'Logo');
+        overlayLogo.style.display = 'block';
+    } else {
+        overlayLogo.style.display = 'none';
+    }
 
-            return `<span>${platform}</span>`;
+    // Section label
+    const sectionLbl = document.querySelector('.overlay-section-title');
+    if (sectionLbl) sectionLbl.textContent = t.aboutProject || 'About this project';
 
-        }).join("");
+    document.getElementById('overlay-platforms').innerHTML =
+        (project.platforms || []).map(p => {
+            if (p === 'Android') return '<span><i class="fab fa-android"></i> Android</span>';
+            if (p === 'PC')      return '<span><i class="fas fa-desktop"></i> PC</span>';
+            if (p === 'WebGL')   return '<span><i class="fas fa-globe"></i> WebGL</span>';
+            if (p === 'iOS')     return '<span><i class="fab fa-apple"></i> iOS</span>';
+            return `<span>${p}</span>`;
+        }).join('');
 
-    document.getElementById("overlay-release").innerHTML =
-    `
-    <div class="info-label">
-        Released on
-    </div>
+    const releaseDate = (lang === 'fa' && window.toJalali)
+        ? window.toJalali(project.releaseDate)
+        : formatDate(project.releaseDate, locale);
 
-    <div class="info-value">
-        ${formatDate(project.releaseDate)}
-    </div>
+    const updateDate = (lang === 'fa' && window.toJalali)
+        ? window.toJalali(project.lastUpdate)
+        : formatDate(project.lastUpdate, locale);
+
+    document.getElementById('overlay-release').innerHTML = `
+        <div class="info-label">${t.releasedOn || 'Released on'}</div>
+        <div class="info-value">${releaseDate}</div>
     `;
 
-    document.getElementById("overlay-update").innerHTML =
-    `
-    <div class="info-label">
-        Updated on
-    </div>
-
-    <div class="info-value">
-        ${formatDate(project.lastUpdate)}
-    </div>
+    document.getElementById('overlay-update').innerHTML = `
+        <div class="info-label">${t.lastUpdate || 'Last update'}</div>
+        <div class="info-value">${updateDate}</div>
     `;
 
-    overlayGallery.innerHTML = "";
-    overlayLinks.innerHTML = "";
+    overlayGallery.innerHTML = '';
+    overlayLinks.innerHTML   = '';
 
-    /* Images */
-
-    overlayGallery.innerHTML = "";
-
-    /* Videos */
-
-    if(project.videos){
-
+    if (project.videos) {
         project.videos.forEach(video => {
-
-            const videoThumb =
-                document.createElement("div");
-
-            videoThumb.classList.add("video-thumb");
-
+            const videoThumb = document.createElement('div');
+            videoThumb.classList.add('video-thumb');
             videoThumb.innerHTML = `
                 <img src="${video.thumbnail}" alt="Video">
-
-                <div class="play-icon">
-                    <i class="fas fa-play"></i>
-                </div>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
             `;
-
-            videoThumb.addEventListener("click", () => {
-
+            videoThumb.addEventListener('click', () => {
                 let embedUrl = video.url;
-
-                if(embedUrl.includes("youtube.com/watch?v=")){
-
-                    const videoId =
-                        embedUrl.split("v=")[1].split("&")[0];
-
-                    embedUrl =
-                        `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                if (embedUrl.includes('youtube.com/watch?v=')) {
+                    const videoId = embedUrl.split('v=')[1].split('&')[0];
+                    embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
                 }
-
-                viewerContent.innerHTML = `
-                    <iframe
-                        src="${embedUrl}"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen>
-                    </iframe>
-                `;
-
-                imageViewer.classList.add("active");
+                viewerContent.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+                imageViewer.classList.add('active');
             });
-
             overlayGallery.appendChild(videoThumb);
         });
-
     }
 
-    /* Images */
-
-    if(project.images){
-
+    if (project.images) {
         project.images.forEach(image => {
-
-            const img = document.createElement("img");
-
+            const img = document.createElement('img');
             img.src = image;
-            img.alt = project.title;
-            img.classList.add("gallery-item");
-
-            img.addEventListener("click", () => {
-
-                viewerContent.innerHTML = `
-                    <img src="${image}">
-                `;
-
-                imageViewer.classList.add("active");
+            img.alt = title;
+            img.classList.add('gallery-item');
+            img.addEventListener('click', () => {
+                viewerContent.innerHTML = `<img src="${image}">`;
+                imageViewer.classList.add('active');
             });
-
             overlayGallery.appendChild(img);
         });
-
     }
 
-    /* Gallery Buttons */
+    const galleryCount = (project.images?.length || 0) + (project.videos?.length || 0);
+    prevBtn.style.display = galleryCount > 2 ? 'flex' : 'none';
+    nextBtn.style.display = galleryCount > 2 ? 'flex' : 'none';
 
-    const galleryCount =
-    (project.images?.length || 0) +
-    (project.videos?.length || 0);
-
-    if(galleryCount > 2){
-
-        prevBtn.style.display = "flex";
-        nextBtn.style.display = "flex";
-
-    }
-    else{
-
-        prevBtn.style.display = "none";
-        nextBtn.style.display = "none";
+    // In RTL, "previous" should visually point right and "next" should point left
+    if (lang === 'fa') {
+        prevBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        nextBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+    } else {
+        prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
     }
 
-    gallery.addEventListener("scroll", () => {
+    gallery.removeEventListener('scroll', updateGalleryButtons);
+    gallery.addEventListener('scroll', updateGalleryButtons);
 
-        updateGalleryButtons();
-
-    });
-
-    /* Links */
-
-    if(project.links){
-
+    if (project.links) {
         project.links.forEach(link => {
-
             overlayLinks.innerHTML += `
-                <a
-                    class="overlay-link"
-                    href="${link.url}"
-                    target="_blank">
-
-                    <i class="${link.icon}"></i>
-
-                    ${link.title}
-
+                <a class="overlay-link" href="${link.url}" target="_blank">
+                    <i class="${link.icon}"></i> ${link.title}
                 </a>
             `;
-
         });
-
     }
 
-    overlay.classList.add("active");
-
-    gallery.scrollLeft = 0;
-
-    requestAnimationFrame(() => {
-
-        updateGalleryButtons();
-
-    });
-
-    document.body.style.overflow = "hidden";
+    requestAnimationFrame(updateGalleryButtons);
 }
 
-closeButton.addEventListener("click", closeOverlay);
 
-closeImage.addEventListener("click", () => {
+closeButton.addEventListener('click', closeOverlay);
 
-    imageViewer.classList.remove("active");
-
-    viewerContent.innerHTML = "";
-
+closeImage.addEventListener('click', () => {
+    imageViewer.classList.remove('active');
+    viewerContent.innerHTML = '';
 });
 
-nextBtn.addEventListener("click", () => {
+// Prev/Next: in RTL the visual gallery is mirrored (flex-direction: row-reverse
+// in CSS), so we invert the scroll direction to match natural right-to-left reading.
+nextBtn.addEventListener('click', () => {
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const dir  = lang === 'fa' ? -350 : 350;
+    gallery.scrollBy({ left: dir, behavior: 'smooth' });
+});
 
-    gallery.scrollBy({
+prevBtn.addEventListener('click', () => {
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const dir  = lang === 'fa' ? 350 : -350;
+    gallery.scrollBy({ left: dir, behavior: 'smooth' });
+});
 
-        left: 350,
+overlay.addEventListener('click', e => { if (e.target === overlay) closeOverlay(); });
+imageViewer.addEventListener('click', e => {
+    if (e.target === imageViewer) { imageViewer.classList.remove('active'); viewerContent.innerHTML = ''; }
+});
 
-        behavior: "smooth"
+function closeOverlay() {
+    overlay.classList.remove('active');
+    currentProject = null;
+    document.body.style.overflow = '';
+}
 
+function formatDate(dateString, locale) {
+    if (!dateString) return '-';
+    return new Date(dateString).toLocaleDateString(locale || 'en-US', {
+        year: 'numeric', month: 'short', day: 'numeric'
     });
+}
 
-});
+function updateGalleryButtons() {
+    const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
 
-prevBtn.addEventListener("click", () => {
-
-    gallery.scrollBy({
-
-        left: -350,
-
-        behavior: "smooth"
-
-    });
-
-});
-
-overlay.addEventListener("click", e => {
-
-    if(e.target === overlay){
-
-        closeOverlay();
-
+    if (lang === 'fa') {
+        // Mirrored gallery: "prev" (visually pointing right) is disabled at the start (scrollLeft near 0 from the right)
+        prevBtn.classList.toggle('disabled', gallery.scrollLeft >= maxScroll - 10);
+        nextBtn.classList.toggle('disabled', gallery.scrollLeft <= 1);
+    } else {
+        prevBtn.classList.toggle('disabled', gallery.scrollLeft <= 1);
+        nextBtn.classList.toggle('disabled', gallery.scrollLeft >= maxScroll - 10);
     }
-
-});
-
-imageViewer.addEventListener("click", e => {
-
-    if(e.target === imageViewer){
-
-        imageViewer.classList.remove("active");
-
-        viewerContent.innerHTML = "";
-
-    }
-
-});
-
-function closeOverlay(){
-
-    overlay.classList.remove("active");
-
-    document.body.style.overflow = "";
-
-}
-
-function formatDate(dateString){
-
-    if(!dateString)
-        return "-";
-
-    return new Date(dateString).toLocaleDateString(
-        "en-US",
-        {
-            year:"numeric",
-            month:"short",
-            day:"numeric"
-        }
-    );
-}
-
-function updateGalleryButtons(){
-
-    const maxScroll =
-        gallery.scrollWidth - gallery.clientWidth;
-
-    prevBtn.classList.toggle(
-        "disabled",
-        gallery.scrollLeft <= 1
-    );
-
-    nextBtn.classList.toggle(
-        "disabled",
-        gallery.scrollLeft >= maxScroll - 10
-    );
-
-    console.log(
-    "next disabled:",
-    nextBtn.classList.contains("disabled")
-);
 }

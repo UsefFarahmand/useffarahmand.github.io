@@ -1,166 +1,129 @@
 [
     {
-        "title":"GT Racing",
-
-        "genre":"Playable ads",
-
+        "title": "GT Racing",
+        "genre": "Playable ads",
         "projectType": "client",
         "client": "White Designers Studios",
-
-        "platforms":[
-        ],
-
-        "releaseDate":"2021-04-01",
-
-        "lastUpdate":"2021-04-01",
-
-        "thumbnail":"https://media.licdn.com/dms/image/v2/D4E2DAQEz_-O-7NJM2w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718702708402?e=1781881200&v=beta&t=ub_Ts2vONLJM4uFsihJKsqLT9UholpRDHFuUtu6Cw5E",
-
-        "description":"A playable ad for GT Racing developed in Cocos Creator with TypeScript, commissioned by Berga Games. This interactive mobile ad introduces the adrenaline-pumping gameplay of GT Racing. Stay tuned for more updates! 🏎️💨",
-
-        "images":[
-        ],
-
-        "videos":[
-        {
-            "thumbnail":"assets/img/projects/GT Racing/Video thumbnail.jpg",
-            "url":"https://www.youtube.com/watch?v=AhYC_hzblXM"
-        }
-        ],
-
-        "links":[
-        {
-            "title":"Play on web",
-            "icon":"fas fa-gamepad",
-            "url":"assets/html/GT Racing.html"
-        }
-        ]
-    },
-    {
-        "title":"Farmand",
-
-        "genre":"Playable ads",
-
-        "projectType": "client",
-        "client": "White Designers Studios",
-
-        "platforms":[
-        ],
-
-        "releaseDate":"2021-06-01",
-
-        "lastUpdate":"2021-06-01",
-
-        "thumbnail":"assets/img/projects/Farmand/thumbnail.jpg",
-
-        "description":"The Fermand is portrayed as an interactive advertisement for the Fermand Chocolate Company. It has been incorporated into one of their commercial campaigns lately.",
-
-        "images":[
-        ],
-
-        "videos":[
-        {
-            "thumbnail":"assets/img/projects/Farmand/thumbnail.jpg",
-            "url":"https://www.youtube.com/watch?v=SOQxlsLB2fI"
-        }
-        ],
-
-        "links":[
+        "platforms": [],
+        "releaseDate": "2021-04-01",
+        "lastUpdate": "2021-04-01",
+        "thumbnail": "https://media.licdn.com/dms/image/v2/D4E2DAQEz_-O-7NJM2w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718702708402?e=1781881200&v=beta&t=ub_Ts2vONLJM4uFsihJKsqLT9UholpRDHFuUtu6Cw5E",
+        "description": "A playable ad for GT Racing developed in Cocos Creator with TypeScript, commissioned by Berga Games. This interactive mobile ad introduces the adrenaline-pumping gameplay of GT Racing. Stay tuned for more updates! 🏎️💨",
+        "images": [],
+        "videos": [
             {
-                "title":"Play on web",
-                "icon":"fas fa-gamepad",
-                "url":"assets/html/Farmand-adpay/index.html"
+                "thumbnail": "assets/img/projects/GT Racing/Video thumbnail.jpg",
+                "url": "https://www.youtube.com/watch?v=AhYC_hzblXM"
             }
-        ]
+        ],
+        "links": [
+            {
+                "title": "Play on web",
+                "icon": "fas fa-gamepad",
+                "url": "assets/html/GT Racing.html"
+            }
+        ],
+        "genre_fa": "تبلیغات تعاملی",
+        "description_fa": "یک تبلیغ تعاملی برای GT Racing که با Cocos Creator و TypeScript توسعه داده شده و توسط Berga Games سفارش داده شده است. این تبلیغ موبایل تعاملی، گیم‌پلی پراحساس GT Racing را معرفی می‌کند. منتظر به‌روزرسانی‌های بیشتر باشید! 🏎️💨",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "https://media.licdn.com/dms/image/v2/D4E2DAQEz_-O-7NJM2w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1718702708402?e=1781881200&v=beta&t=ub_Ts2vONLJM4uFsihJKsqLT9UholpRDHFuUtu6Cw5E",
+        "logo": ""
     },
     {
-        "title":"Nailer Mailer",
-
-        "genre":"Hyper Casual",
-
+        "title": "Farmand",
+        "genre": "Playable ads",
         "projectType": "client",
         "client": "White Designers Studios",
-
-        "platforms":[
+        "platforms": [],
+        "releaseDate": "2021-06-01",
+        "lastUpdate": "2021-06-01",
+        "thumbnail": "assets/img/projects/Farmand/thumbnail.jpg",
+        "description": "The Fermand is portrayed as an interactive advertisement for the Fermand Chocolate Company. It has been incorporated into one of their commercial campaigns lately.",
+        "images": [],
+        "videos": [
+            {
+                "thumbnail": "assets/img/projects/Farmand/thumbnail.jpg",
+                "url": "https://www.youtube.com/watch?v=SOQxlsLB2fI"
+            }
+        ],
+        "links": [
+            {
+                "title": "Play on web",
+                "icon": "fas fa-gamepad",
+                "url": "assets/html/Farmand-adpay/index.html"
+            }
+        ],
+        "genre_fa": "تبلیغات تعاملی",
+        "description_fa": "فرمند به‌عنوان یک تبلیغ تعاملی برای شرکت شکلات فرمند طراحی شده است. این پروژه اخیراً در یکی از کمپین‌های تبلیغاتی این شرکت گنجانده شده است.",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "assets/img/projects/Farmand/thumbnail.jpg",
+        "logo": ""
+    },
+    {
+        "title": "Nailer Mailer",
+        "genre": "Hyper Casual",
+        "projectType": "client",
+        "client": "White Designers Studios",
+        "platforms": [
             "Android"
         ],
-
-        "releaseDate":"2021-07-01",
-
-        "lastUpdate":"2021-09-01",
-
-        "thumbnail":"assets/img/projects/Nailer Mailer/Logo.webp",
-
+        "releaseDate": "2021-07-01",
+        "lastUpdate": "2021-09-01",
+        "thumbnail": "assets/img/projects/Nailer Mailer/Logo.webp",
         "description": "Nailer Mailer is a super-casual shooter game for Android where players battle through enemy-filled rooms to reach new levels. My contributions included developing the UI system, implementing shopping mechanics, and creating the shooting system with enemy wall attachment behavior. I also developed interactive environment effects such as wall cracking, blood splatters, object shaking, and character ragdoll systems using Puppet Master and Unity's built-in ragdoll solution.\n\nTechnologies & Skills: Unity, C#, Game Development, UI Programming, Physics Simulation, Ragdoll Systems.",
-
-        "images":[
-            
+        "images": [],
+        "videos": [
+            {
+                "thumbnail": "assets/img/projects/Nailer Mailer/Video thumbnail - 1.jpg",
+                "url": "https://www.youtube.com/watch?v=2uNSR1E4CDg"
+            }
         ],
-
-        "videos":[
-        {
-            "thumbnail":"assets/img/projects/Nailer Mailer/Video thumbnail - 1.jpg",
-            "url":"https://www.youtube.com/watch?v=2uNSR1E4CDg"
-        }
-        ],
-
-        "links":[
-        ]
+        "links": [],
+        "genre_fa": "بازی فوق‌اتفاقی",
+        "description_fa": "Nailer Mailer یک بازی تیراندازی فوق‌اتفاقی برای اندروید است که در آن بازیکنان برای رسیدن به مراحل جدید، باید از اتاق‌های پر از دشمن عبور کنند. سهم من شامل توسعه سیستم رابط کاربری، پیاده‌سازی مکانیک‌های خرید، و ساخت سیستم شلیک با رفتار چسبیدن دشمن به دیوار بود. همچنین جلوه‌های محیطی تعاملی مانند ترک‌خوردن دیوار، پاشش خون، لرزش اشیا و سیستم‌های راگ‌دال کاراکتر با استفاده از Puppet Master و راه‌حل راگ‌دال داخلی Unity را توسعه دادم.\n\nمهارت‌ها و فناوری‌ها: Unity، C#، توسعه بازی، برنامه‌نویسی رابط کاربری، شبیه‌سازی فیزیک، سیستم‌های راگ‌دال.",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "assets/img/projects/Nailer Mailer/Logo.webp",
+        "logo": ""
     },
     {
-        "title":"Balloon Boomer!",
-
-        "genre":"Hyper Casual",
-
+        "title": "Balloon Boomer!",
+        "genre": "Hyper Casual",
         "projectType": "client",
         "client": "White Designers Studios",
-
-        "platforms":[
+        "platforms": [
             "Android"
         ],
-
-        "releaseDate":"2021-08-01",
-
-        "lastUpdate":"2021-09-01",
-
-        "thumbnail":"assets/img/projects/Balloon Bommer/logo.webp",
-
+        "releaseDate": "2021-08-01",
+        "lastUpdate": "2021-09-01",
+        "thumbnail": "assets/img/projects/Balloon Bommer/logo.webp",
         "description": "Balloon Bommer is a hyper-casual shooter game for Android where players battle through multiple rooms filled with enemies to unlock new stages. My responsibilities included designing and implementing the user interface system, developing the in-game shopping mechanics, and creating interactive environment features that improved gameplay feedback and immersion.\n\nSkills & Technologies: Unity, C#, Game Development, User Interface Programming.",
-
-        "images":[
+        "images": [
             "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (1).webp",
             "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (2).webp",
             "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (3).webp",
             "assets/img/projects/Balloon Bommer/Balloon Bommer - screenshot (4).webp"
         ],
-
-        "videos":[
-        ],
-
-        "links":[
-        ]
+        "videos": [],
+        "links": [],
+        "genre_fa": "بازی فوق‌اتفاقی",
+        "description_fa": "Balloon Boomer یک بازی تیراندازی فوق‌اتفاقی برای اندروید است که در آن بازیکنان باید از میان چندین اتاق پر از دشمن عبور کرده و مراحل جدید را باز کنند. مسئولیت‌های من شامل طراحی و پیاده‌سازی سیستم رابط کاربری، توسعه مکانیک‌های خرید درون‌بازی، و ایجاد ویژگی‌های محیطی تعاملی بود که بازخورد گیم‌پلی و غوطه‌وری را بهبود می‌بخشید.\n\nمهارت‌ها و فناوری‌ها: Unity، C#، توسعه بازی، برنامه‌نویسی رابط کاربری.",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "assets/img/projects/Balloon Bommer/logo.webp",
+        "logo": ""
     },
     {
-        "title":"Hide and Seek",
-
-        "genre":"Multiplayer action-shooter",
-
+        "title": "Hide and Seek",
+        "genre": "Multiplayer action-shooter",
         "projectType": "client",
         "client": "White Designers Studios",
-
-        "platforms":[
+        "platforms": [
             "Android"
         ],
-
-        "releaseDate":"2021-11-01",
-
-        "lastUpdate":"2022-02-01",
-
-        "thumbnail":"assets/img/projects/Hide and Seek/Hide and Seek - thumbnail.PNG",
-
+        "releaseDate": "2021-11-01",
+        "lastUpdate": "2022-02-01",
+        "thumbnail": "assets/img/projects/Hide and Seek/Hide and Seek - thumbnail.PNG",
         "description": "Hide and Seek 🕵️‍♂️ is an addictive multiplayer action-shooter game, adding a thrilling twist to the popular Prop Hunt genre. Players can hide as various props within any room or attempt to escape from others. Simply swap and become any kind of hidden object, whether a chair, a box, even a toilet bowl!\n\nThis design concept seems to be based on some of the old Iranian comics and equipment used within the 1370s Hijri and earlier era-inspired by cultural elements that are rare for them.",
-
-        "images":[
+        "images": [
             "assets/img/projects/Hide and Seek/Hide and Seek - lobby.png",
             "assets/img/projects/Hide and Seek/Hide and Seek - main menu.png",
             "assets/img/projects/Hide and Seek/Hide and Seek - map (1).png",
@@ -177,38 +140,32 @@
             "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (8).png",
             "assets/img/projects/Hide and Seek/Hide and Seek - Screenshot (9).png"
         ],
-
-        "videos":[
-        {
-            "thumbnail":"assets/img/projects/Hide and Seek/Hide and Seek - lobby.png",
-            "url":"https://www.youtube.com/watch?v=cBpBIwBkTus"
-        }
+        "videos": [
+            {
+                "thumbnail": "assets/img/projects/Hide and Seek/Hide and Seek - lobby.png",
+                "url": "https://www.youtube.com/watch?v=cBpBIwBkTus"
+            }
         ],
-
-        "links":[
-        ]
+        "links": [],
+        "genre_fa": "تیراندازی اکشن چندنفره",
+        "description_fa": "Hide and Seek 🕵️‍♂️ یک بازی تیراندازی اکشن چندنفره اعتیادآور است که چرخشی هیجان‌انگیز به ژانر محبوب Prop Hunt اضافه می‌کند. بازیکنان می‌توانند به‌عنوان اشیا مختلف در هر اتاقی پنهان شوند یا تلاش کنند از دیگران فرار کنند. به‌سادگی جابه‌جا شوید و به هر نوع شیء پنهانی تبدیل شوید، چه صندلی باشد، چه جعبه، حتی یک توالت فرنگی!\n\nاین مفهوم طراحی به نظر می‌رسد بر اساس برخی از کمیک‌های قدیمی ایرانی و وسایل دهه ۱۳۷۰ شمسی و قبل از آن، با الهام از عناصر فرهنگی نادر باشد.",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "assets/img/projects/Hide and Seek/Hide and Seek - thumbnail.PNG",
+        "logo": ""
     },
     {
-        "title":"The Skatepark",
-
-        "genre":"Open World / Sports",
-
+        "title": "The Skatepark",
+        "genre": "Open World / Sports",
         "projectType": "client",
         "client": "White Designers Studios",
-
-        "platforms":[
+        "platforms": [
             "WebGL"
         ],
-
-        "releaseDate":"2022-03-01",
-
-        "lastUpdate":"2022-09-01",
-
-        "thumbnail":"assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
-
+        "releaseDate": "2022-03-01",
+        "lastUpdate": "2022-09-01",
+        "thumbnail": "assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
         "description": "The Skatepark Project is an open-world skateboarding game featuring characters based on Nounz NFTs. Players can perform a wide variety of skateboard tricks, interact with NPCs, challenge other players, and participate in competitive skateboard duels. As a Technical Artist and Animator on the project, I was responsible for character creation and animation, integrating art assets into the game engine, and developing technical tools to streamline workflows and improve the gameplay experience. I also implemented core skateboard mechanics and designed customization systems for character avatars and skateboard skins, providing players with greater personalization options.\n\nSkills & Technologies: Unity, C#, Technical Animation, 2D Animation, Character Rigging, Game Development, Technical Art.",
-
-        "images":[
+        "images": [
             "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (1).jpg",
             "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (2).jpg",
             "assets/img/projects/The Skatepark Project/The Skatepark Project - Screenshot (3).jpg",
@@ -224,171 +181,140 @@
             "assets/img/projects/The Skatepark Project/The Skatepark Project -Graffiti.gif",
             "assets/img/projects/The Skatepark Project/The Skatepark Project -Trees.gif"
         ],
-
-        "videos":[
-        {
-            "thumbnail":"assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
-            "url":"assets/img/projects/The Skatepark Project/The Skatepark Project.mp4"
-        }
-        ],
-
-        "links":[
+        "videos": [
             {
-                "title":"Project Showcase",
-                "icon":"fab fa-linkedin",
-                "url":"https://www.linkedin.com/feed/update/urn:li:activity:7096860562759766016"
+                "thumbnail": "assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
+                "url": "assets/img/projects/The Skatepark Project/The Skatepark Project.mp4"
             }
-        ]
+        ],
+        "links": [
+            {
+                "title": "Project Showcase",
+                "icon": "fab fa-linkedin",
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:7096860562759766016"
+            }
+        ],
+        "genre_fa": "دنیای باز / ورزشی",
+        "description_fa": "پروژه The Skatepark یک بازی اسکیت‌بورد دنیای باز با شخصیت‌هایی بر اساس Nounz NFT است. بازیکنان می‌توانند انواع مختلفی از حرکات اسکیت‌بورد را انجام دهند، با NPC‌ها تعامل داشته باشند، دیگر بازیکنان را به چالش بکشند و در رقابت‌های اسکیت‌بورد شرکت کنند. به‌عنوان هنرمند فنی و انیماتور این پروژه، مسئول ساخت و انیمیشن کاراکترها، یکپارچه‌سازی دارایی‌های هنری در موتور بازی، و توسعه ابزارهای فنی برای ساده‌سازی فرآیندها و بهبود تجربه گیم‌پلی بودم. همچنین مکانیک‌های اصلی اسکیت‌بورد را پیاده‌سازی کردم و سیستم‌های سفارشی‌سازی برای آواتارهای کاراکتر و اسکین‌های اسکیت‌بورد طراحی کردم.\n\nمهارت‌ها و فناوری‌ها: Unity، C#، انیمیشن فنی، انیمیشن ۲بعدی، ریگینگ کاراکتر، توسعه بازی، هنر فنی.",
+        "client_fa": "استودیو وایت دیزاینرز",
+        "banner": "assets/img/projects/The Skatepark Project/The Skatepark Project - thumbnail.png",
+        "logo": ""
     },
     {
-        "title":"Mr. Bean Solitaire: Adventure",
-
-        "genre":"Card Game / Casual",
-
+        "title": "Mr. Bean Solitaire: Adventure",
+        "genre": "Card Game / Casual",
         "projectType": "client",
         "client": "Unbound Game Studio",
-
-        "platforms":[
+        "platforms": [
             "Android"
         ],
-
-        "releaseDate":"2023-12-01",
-
-        "lastUpdate":"2024-08-09",
-
-        "thumbnail":"https://play-lh.googleusercontent.com/dv0G3uNTd5nO4yIgiRf7rEG87AJnB6030DmZjA5jGyDxfR50SOfGa6gBHLMShHpTk5zeW8CKdOoJLpIJrOK7=w240-h480-rw",
-
+        "releaseDate": "2023-12-01",
+        "lastUpdate": "2024-08-09",
+        "thumbnail": "https://play-lh.googleusercontent.com/dv0G3uNTd5nO4yIgiRf7rEG87AJnB6030DmZjA5jGyDxfR50SOfGa6gBHLMShHpTk5zeW8CKdOoJLpIJrOK7=w240-h480-rw",
         "description": "Mr. Bean Solitaire: Adventure is a casual card game available on Google Play, delivering an engaging solitaire experience inspired by the beloved Mr. Bean universe. As part of the development team, I contributed to implementing core gameplay mechanics and designing the user interface. I also created and integrated animations for both cards and UI elements, ensuring smooth interactions and an enjoyable player experience.\n\nSkills & Technologies: Unity, C#, Game Development, UI Programming, Technical Animation, 2D Animation.",
-
-        "images":[
+        "images": [
             "https://play-lh.googleusercontent.com/3Ljir9VAOJkZxsLYHaM4Ml44EvW7UZr_YIUSmQ5WhJA66U3QEjsMdP2RwMytthHTHSd4qu7tJrBuv6yEaAGK=w2560-h1440-rw",
             "https://play-lh.googleusercontent.com/gpdMjrmPlq325JJKUHhuJ_Z36a_9RbLeDV-O4hwiDr8tSssUbbQDrAeBNhfaEWPfUA-6a9TaAcCxLE_jwK-t=w2560-h1440-rw",
             "https://play-lh.googleusercontent.com/0Fh02d68ikjaHkb2SXd9rQvFaF1gS2jY9-fD1AECfAklCMr_9jaqb9VXroxhiNaMKmEGjGTiKHC-b684C2KVlAc=w2560-h1440-rw",
             "https://play-lh.googleusercontent.com/A55apaZtlN3u9lmiQjQo7jAKzawddVu8HMBtaKzKD03LkAkh_vQSpGbXpFY1qzgvgJCCNr-67Lc59XTJX-Ygxw=w2560-h1440-rw",
             "https://play-lh.googleusercontent.com/de0kUyrKxJvDnQy5teNOvXLjx10MbumbZBpH-qOdY01CFr-6rmNbv1zTcfazEYc2wKdmauxtcWRdL0MS6kXfe2k=w2560-h1440-rw"
         ],
-
-        "videos":[
-        
-        ],
-
-        "links":[
+        "videos": [],
+        "links": [
             {
-                "title":"Google Play",
-                "icon":"fab fa-google-play",
-                "url":"https://play.google.com/store/apps/details?id=com.mrbean.solitaire.card.game.tripeaks&hl=en_US"
+                "title": "Google Play",
+                "icon": "fab fa-google-play",
+                "url": "https://play.google.com/store/apps/details?id=com.mrbean.solitaire.card.game.tripeaks&hl=en_US"
             }
-        ]
+        ],
+        "genre_fa": "بازی کارتی / آرام",
+        "description_fa": "Mr. Bean Solitaire: Adventure یک بازی کارتی آرام موجود در Google Play است که تجربه‌ای جذاب از سولیتر را با الهام از دنیای محبوب آقای بین ارائه می‌دهد. به‌عنوان بخشی از تیم توسعه، در پیاده‌سازی مکانیک‌های اصلی گیم‌پلی و طراحی رابط کاربری مشارکت داشتم. همچنین انیمیشن‌هایی برای کارت‌ها و عناصر UI ساختم و یکپارچه کردم تا تعاملات نرم و تجربه‌ای لذت‌بخش برای بازیکن فراهم شود.\n\nمهارت‌ها و فناوری‌ها: Unity، C#، توسعه بازی، برنامه‌نویسی رابط کاربری، انیمیشن فنی، انیمیشن ۲بعدی.",
+        "client_fa": "استودیو آنباند گیم",
+        "banner": "https://play-lh.googleusercontent.com/dv0G3uNTd5nO4yIgiRf7rEG87AJnB6030DmZjA5jGyDxfR50SOfGa6gBHLMShHpTk5zeW8CKdOoJLpIJrOK7=w240-h480-rw",
+        "logo": ""
     },
     {
-        "title":"UAPI UniTask",
-
-        "genre":"Unity Package",
-
+        "title": "UAPI UniTask",
+        "genre": "Unity Package",
         "projectType": "personal",
         "client": "",
-
-        "platforms":[
+        "platforms": [
             "PC"
         ],
-
-        "releaseDate":"2024-07-01",
-
-        "lastUpdate":"2024-10-24",
-
-        "thumbnail":"assets/img/projects/Unity Packages/Unity Logo.webp",
-
+        "releaseDate": "2024-07-01",
+        "lastUpdate": "2024-10-24",
+        "thumbnail": "assets/img/projects/Unity Packages/Unity Logo.webp",
         "description": "UAPI UniTask is an open-source C# library designed to streamline API integration within Unity projects. It provides a unified system for managing external API connections, making it easier for developers to connect and configure various services in a game or application. My contributions centered on improving flexibility and performance within Unity environments.",
-
-        "images":[
-            
-        ],
-
-        "videos":[
-        
-        ],
-
-        "links":[
+        "images": [],
+        "videos": [],
+        "links": [
             {
-                "title":"GitHub",
-                "icon":"fab fa-github",
-                "url":"https://github.com/UModules/UAPI-UniTask"
+                "title": "GitHub",
+                "icon": "fab fa-github",
+                "url": "https://github.com/UModules/UAPI-UniTask"
             }
-        ]
+        ],
+        "genre_fa": "پکیج Unity",
+        "description_fa": "UAPI UniTask یک کتابخانه متن‌باز C# است که برای ساده‌سازی یکپارچه‌سازی API در پروژه‌های Unity طراحی شده است. این کتابخانه یک سیستم یکپارچه برای مدیریت اتصالات API خارجی فراهم می‌کند و اتصال و پیکربندی سرویس‌های مختلف در یک بازی یا اپلیکیشن را برای توسعه‌دهندگان آسان‌تر می‌کند. مشارکت من بر بهبود انعطاف‌پذیری و عملکرد در محیط‌های Unity متمرکز بود.",
+        "banner": "assets/img/projects/Unity Packages/Unity Logo.webp",
+        "logo": ""
     },
     {
-        "title":"UAPI Coroutine",
-
-        "genre":"Unity Package",
-
+        "title": "UAPI Coroutine",
+        "genre": "Unity Package",
         "projectType": "personal",
         "client": "",
-
-        "platforms":[
+        "platforms": [
             "PC"
         ],
-
-        "releaseDate":"2024-10-01",
-
-        "lastUpdate":"2024-10-16",
-
-        "thumbnail":"assets/img/projects/Unity Packages/Unity Logo.webp",
-
+        "releaseDate": "2024-10-01",
+        "lastUpdate": "2024-10-16",
+        "thumbnail": "assets/img/projects/Unity Packages/Unity Logo.webp",
         "description": "UAPI Coroutine is an open-source C# library built to handle asynchronous API requests within Unity using IEnumerator. It simplifies API integration by leveraging Unity’s built-in coroutine system, allowing for seamless API calls without the need for async/await or Task. My work focused on enhancing API management for game and application development, providing a flexible and lightweight solution for Unity developers.",
-
-        "images":[
-            
-        ],
-
-        "videos":[
-        
-        ],
-
-        "links":[
+        "images": [],
+        "videos": [],
+        "links": [
             {
-                "title":"GitHub",
-                "icon":"fab fa-github",
-                "url":"https://github.com/UModules/UAPI-Coroutine"
+                "title": "GitHub",
+                "icon": "fab fa-github",
+                "url": "https://github.com/UModules/UAPI-Coroutine"
             }
-        ]
+        ],
+        "genre_fa": "پکیج Unity",
+        "description_fa": "UAPI Coroutine یک کتابخانه متن‌باز C# است که برای مدیریت درخواست‌های ناهم‌زمان API در Unity با استفاده از IEnumerator ساخته شده است. این کتابخانه با بهره‌گیری از سیستم coroutine داخلی Unity، یکپارچه‌سازی API را ساده می‌کند و امکان فراخوانی‌های API بدون نیاز به async/await یا Task را فراهم می‌سازد. کار من بر بهبود مدیریت API برای توسعه بازی و اپلیکیشن متمرکز بود و راه‌حلی سبک و انعطاف‌پذیر برای توسعه‌دهندگان Unity ارائه می‌دهد.",
+        "banner": "assets/img/projects/Unity Packages/Unity Logo.webp",
+        "logo": ""
     },
     {
-        "title":"Simulix",
-
-        "genre":"Simulation",
-
+        "title": "Simulix",
+        "genre": "Simulation",
         "projectType": "client",
         "client": "Apexia Soft",
-
-        "platforms":[
+        "platforms": [
             "PC"
         ],
-
-        "releaseDate":"2024-06-01",
-
-        "lastUpdate":"2024-12-16",
-
-        "thumbnail":"assets/img/projects/Simulix/Simulix - Logo.png",
-
+        "releaseDate": "2024-06-01",
+        "lastUpdate": "2024-12-16",
+        "thumbnail": "assets/img/projects/Simulix/Simulix - Logo.png",
         "description": "Simulix 🏢 is a cutting-edge 3D presentation software designed to enhance the presentation and sales of building units to clients. It offers unique features, including:\n\n1. Explore the project in 360-degree view in day or night settings 🌞🌜\n\n2. Show outstanding surrounding landmarks near the project 🌆\n3. Filter and select available units and show the 2D and 3D plans 🗺️\n4. Showcase each unit's balcony view and interior gallery 🏡\n5. Exploring project amenities in a tour and show the gallery 🌟🖼\nAs the programmer for this project, I was responsible for implementing the flexible user interface, the unit filtering system, and client-server communication. 💪",
-
-        "images":[
-            
-        ],
-
-        "videos":[
+        "images": [],
+        "videos": [
             {
-                "thumbnail":"assets/img/projects/Simulix/Simulix - Video thumbnail.jpg",
-                "url":"https://www.youtube.com/watch?v=QX04S6vc4ts"
+                "thumbnail": "assets/img/projects/Simulix/Simulix - Video thumbnail.jpg",
+                "url": "https://www.youtube.com/watch?v=QX04S6vc4ts"
             }
         ],
-
-        "links":[
+        "links": [
             {
-                "title":"LinkedIn",
-                "icon":"fa-brands fa-linkedin-in",
-                "url":"https://www.linkedin.com/feed/update/urn:li:activity:7201563858644193280?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BEyWmixycTAKvJQc3QtXaYw%3D%3D"
+                "title": "LinkedIn",
+                "icon": "fa-brands fa-linkedin-in",
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:7201563858644193280?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3BEyWmixycTAKvJQc3QtXaYw%3D%3D"
             }
-        ]
+        ],
+        "genre_fa": "شبیه‌سازی",
+        "description_fa": "Simulix 🏢 یک نرم‌افزار پیشرفته ارائه سه‌بعدی است که برای ارتقای ارائه و فروش واحدهای ساختمانی به مشتریان طراحی شده است. این نرم‌افزار ویژگی‌های منحصربه‌فردی ارائه می‌دهد، از جمله:\n\n۱. کاوش در پروژه با نمای ۳۶۰ درجه در حالت روز یا شب 🌞🌜\n۲. نمایش جاذبه‌های اطراف برجسته نزدیک پروژه 🌆\n۳. فیلتر و انتخاب واحدهای موجود و نمایش نقشه‌های ۲بعدی و ۳بعدی 🗺️\n۴. نمایش منظره بالکن و گالری داخلی هر واحد 🏡\n۵. کاوش امکانات پروژه در یک تور و نمایش گالری 🌟🖼\n\nبه‌عنوان برنامه‌نویس این پروژه، مسئول پیاده‌سازی رابط کاربری انعطاف‌پذیر، سیستم فیلتر واحدها، و ارتباط کلاینت-سرور بودم. 💪",
+        "client_fa": "اپکسیا سافت",
+        "banner": "assets/img/projects/Simulix/Simulix - Logo.png",
+        "logo": ""
     }
 ]

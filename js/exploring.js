@@ -1,62 +1,39 @@
-fetch("data/exploring.json")
+/* ================================================
+   exploring.js — renders Currently Exploring
+================================================ */
 
-.then(response => response.json())
+let exploringData = [];
 
-.then(data => {
-
-
-    const container =
-    document.getElementById("exploringContainer");
-
-
-
-    data.forEach(item => {
-
-
-        const element =
-        document.createElement("div");
+fetch('data/exploring.json')
+    .then(r => r.json())
+    .then(data => {
+        exploringData = data;
+        window.renderExploring(window.getCurrentLang ? window.getCurrentLang() : 'en');
+    })
+    .catch(err => console.warn('exploring.js: failed to load data', err));
 
 
-        element.className =
-        "exploring-item";
+window.renderExploring = function(lang) {
+    const container = document.getElementById('exploringContainer');
+    if (!container || !exploringData.length) return;
 
+    container.innerHTML = '';
 
+    exploringData.forEach(item => {
+        const title       = (lang === 'fa' && item.title_fa)       ? item.title_fa       : item.title;
+        const description = (lang === 'fa' && item.description_fa) ? item.description_fa : item.description;
 
-        element.innerHTML = `
+        const el = document.createElement('div');
+        el.className = 'exploring-item';
 
-
-        <i class="${item.icon}"></i>
-
-
-
-        <div>
-
-
-            <h3>
-                ${item.title}
-            </h3>
-
-
-
-            <p>
-
-                ${item.description}
-
-            </p>
-
-
-        </div>
-
-
+        el.innerHTML = `
+            <i class="${item.icon}"></i>
+            <div>
+                <h3>${title}</h3>
+                <p>${description}</p>
+            </div>
         `;
 
-
-
-        container.appendChild(element);
-
-
-
+        container.appendChild(el);
     });
-
-
-});
+};

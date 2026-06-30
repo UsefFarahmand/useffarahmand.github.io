@@ -1,0 +1,363 @@
+/* =====================================================
+   css/i18n.css  —  Bilingual / RTL styles
+   Handles layout corrections and Persian typography.
+   All i18n-related CSS lives here.
+===================================================== */
+
+/* ── Persian font import ──────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap');
+
+/* ── Language toggle button: small, top-left of sideNav ── */
+.lang-toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    white-space: nowrap;
+}
+
+.lang-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.26);
+    border-color: rgba(255, 255, 255, 0.55);
+    transform: scale(1.05);
+}
+
+/* On mobile keep it visible at top-left of the bar too */
+@media (max-width: 991px) {
+    .lang-toggle-btn {
+        top: 8px;
+        left: 8px;
+    }
+}
+
+/* RTL: keep toggle visually at top-left (not mirrored to top-right) */
+html[dir="rtl"] .lang-toggle-btn {
+    left: 10px;
+    right: auto;
+}
+
+/* ── Body transition on language switch ─────────── */
+body {
+    transition: opacity 0.14s ease;
+}
+
+body.lang-switching {
+    opacity: 0;
+}
+
+/* =====================================================
+   RTL / Persian mode  (html[dir="rtl"])
+===================================================== */
+
+html[dir="rtl"] body {
+    font-family: 'Vazirmatn', 'Muli', -apple-system, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] .h1,
+html[dir="rtl"] .h2 {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* ── Main layout: flip sidebar from left to right ── */
+@media (min-width: 992px) {
+    html[dir="rtl"] body {
+        padding-left: 0 !important;
+        padding-right: 17rem;
+    }
+
+    html[dir="rtl"] #sideNav {
+        left: auto !important;
+        right: 0;
+    }
+}
+
+/* ── Sidebar navbar nav items centered in RTL ─────── */
+html[dir="rtl"] #sideNav .navbar-collapse .navbar-nav {
+    text-align: center;
+}
+
+html[dir="rtl"] #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    html[dir="rtl"] #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .dropdown-menu-custom,
+    html[dir="rtl"] .dropdown-menu-custom li a {
+        text-align: center;
+    }
+}
+
+/* ── About section ─────────────────────────────── */
+html[dir="rtl"] .resume-section-content h1,
+html[dir="rtl"] .resume-section-content h2,
+html[dir="rtl"] .resume-section-content .subheading,
+html[dir="rtl"] .about-text {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-actions {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .social-icons {
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .social-icons .social-icon {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+html[dir="rtl"] .social-icons .social-icon:last-child {
+    margin-left: 0;
+}
+
+/* ── Timeline (experience) ─────────────────────── */
+html[dir="rtl"] .timeline,
+html[dir="rtl"] .timeline-item,
+html[dir="rtl"] .timeline-content {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ── Achievement cards ─────────────────────────── */
+html[dir="rtl"] .achievement-card {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .achievement-title {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* ── Explore-my-work cards: button on the left in RTL ── */
+html[dir="rtl"] .explore-info {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .explore-btn {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* ── Skill cards: icon on the right, title on the left ── */
+html[dir="rtl"] .skill-card {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .skill-title {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/* ── Testimonial / Recommendation cards ─────────── */
+html[dir="rtl"] .testimonial-card {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .testimonial-header {
+    flex-direction: row-reverse;
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .testimonial-popup {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .testimonial-popup-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .testimonial-close {
+    left: 1rem;
+    right: auto;
+}
+
+/* ── Exploring items: icon on the right, text on the left ── */
+html[dir="rtl"] .exploring-item {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html[dir="rtl"] .exploring-item > div {
+    text-align: right;
+}
+
+/* ── Contact section ────────────────────────────── */
+html[dir="rtl"] .contact-wrapper {
+    direction: rtl;
+}
+
+html[dir="rtl"] .contact-info,
+html[dir="rtl"] .contact-form {
+    text-align: right;
+    direction: rtl;
+}
+
+/* info-item: icon on the right, name/link on the left in RTL */
+html[dir="rtl"] .info-item {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .info-item > div {
+    text-align: right;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .name-row,
+html[dir="rtl"] .phone-row {
+    direction: rtl;
+}
+
+html[dir="rtl"] .char-counter {
+    text-align: left;
+    direction: ltr;
+}
+
+/* ── Section titles ─────────────────────────────── */
+html[dir="rtl"] section.resume-section .resume-section-content > h2 {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] span,
+html[dir="rtl"] li {
+    direction: rtl;
+}
+
+/* =====================================================
+   Projects page
+===================================================== */
+
+html[dir="rtl"] .projects-title,
+html[dir="rtl"] .projects-subtitle,
+html[dir="rtl"] .project-content {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .overlay-content {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .overlay-section-title,
+html[dir="rtl"] #overlay-description {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] #close-overlay {
+    left: 20px;
+    right: auto;
+}
+
+/* Gallery prev/next: in RTL we keep DOM order but swap icon
+   direction and scroll logic in JS (see projects.js) so the
+   arrows always point the way they will actually scroll. */
+
+/* Project logo: shown to the LEFT of the title in English,
+   RIGHT of the title in Persian (like Google Play) */
+.overlay-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.overlay-title-row img.project-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#overlay-title {
+    margin-bottom: 0;
+}
+
+html[dir="rtl"] .overlay-title-row {
+    flex-direction: row-reverse;
+}
+
+/* =====================================================
+   Articles page — button on left, date on right in RTL
+===================================================== */
+
+html[dir="rtl"] .articles-title,
+html[dir="rtl"] .articles-subtitle,
+html[dir="rtl"] .article-content {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .article-footer {
+    flex-direction: row-reverse;
+}
+
+/* ── Success popup ──────────────────────────────── */
+html[dir="rtl"] .success-popup-box {
+    direction: rtl;
+}
+
+/* sideNav needs position:relative for the lang toggle button */
+#sideNav {
+    position: relative;
+}
+
+/* ── Exploring cards: visible background in both languages ── */
+.exploring-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exploring-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}

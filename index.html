@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,26 +10,18 @@
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://useffarahmand.com/" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/contact.css" rel="stylesheet" />
-        <!-- Open Graph -->
+        <link href="css/i18n.css" rel="stylesheet" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Usef Farahmand | Unity Developer & Technical Artist" />
         <meta property="og:description" content="Portfolio, resume, game development projects and technical art experience." />
         <meta property="og:url" content="https://useffarahmand.com/" />
-        <meta property="og:image" content="https://useffarahmand.com/assets/img/profile.png" loading="lazy" />
-        
-        <!-- Twitter -->
+        <meta property="og:image" content="https://useffarahmand.com/assets/img/profile.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Usef Farahmand | Unity Developer & Technical Artist" />
-        <meta name="twitter:description" content="Portfolio, resume, game development projects and technical art experience." />
-        
         <script type="application/ld+json">
         {
           "@context":"https://schema.org",
@@ -37,538 +29,251 @@
           "name":"Usef Farahmand",
           "url":"https://useffarahmand.com",
           "jobTitle":"Unity Developer",
-          "sameAs":[
-            "https://www.linkedin.com/in/useffarahmand",
-            "https://medium.com/@UsefFarahmand",
-            "https://www.youtube.com/@UsefFarahmand",
-            "https://t.me/UsefGameLab"
-          ],
-          "alternateName":[
-            "Yosef Farahmand",
-            "یوسف فرهمند",
-            "یوسف فرحمند",
-            "سید یوسف فرهمند",
-            "سید یوسف فرحمند",
-            "Yousef Farahmand",
-            "UsefFarahmand",
-            "Joseph Farahmand",
-            "YosefFarahmand",
-            "YousefFarahmand"
-          ]
+          "sameAs":["https://www.linkedin.com/in/useffarahmand","https://medium.com/@UsefFarahmand","https://www.youtube.com/@UsefFarahmand","https://t.me/UsefGameLab"]
         }
-        </script>    
+        </script>
     </head>
     <body id="page-top">
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            (function(){ emailjs.init({ publicKey: "2C3kaWw-eOHbktnnm" }); })();
         </script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init({
-                    publicKey: "2C3kaWw-eOHbktnnm",
-                });
-            })();
-        </script>
-        <!-- Navigation-->
+
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <!-- Language toggle: fixed top-left corner of sideNav -->
+            <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language">
+                🌐 <span id="langToggleLabel">فارسی</span>
+            </button>
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Usef Farahmand</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Usef Farahmand - Unity Developer and Technical Artist" /></span>
+                <span class="d-block d-lg-none" data-i18n="sideNav.brandName">Usef Farahmand</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="Usef Farahmand" />
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-i18n="nav.about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
                     <li class="nav-item nav-dropdown">
-
-                        <a class="nav-link js-scroll-trigger"
-                        href="#explore"
-                        id="myWorkBtn">
-
-                            My Work
-
+                        <a class="nav-link js-scroll-trigger" href="#explore" id="myWorkBtn">
+                            <span data-i18n="nav.myWork">My Work</span>
                             <i class="fas fa-chevron-down dropdown-arrow"></i>
-
                         </a>
-
                         <ul class="dropdown-menu-custom">
-
-                            <li>
-                                <a href="projects.html">
-                                    Projects
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="articles.html">
-                                    Articles
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.useffarahmand.com/gamehub/">
-                                    Game Hub
-                                </a>
-                            </li>
-
+                            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                            <li><a href="articles.html" data-i18n="nav.articles">Articles</a></li>
+                            <li><a href="https://www.useffarahmand.com/gamehub/" data-i18n="nav.gameHub">Game Hub</a></li>
                         </ul>
-
                     </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recommendations">Recommendations</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#exploring">Exploring</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recommendations" data-i18n="nav.recommendations">Recommendations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#exploring" data-i18n="nav.exploring">Exploring</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" data-i18n="nav.contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- Page Content-->
+
+        <!-- Page Content -->
         <div class="container-fluid p-0">
-            <!-- About-->
+            <!-- About -->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Usef
-                        <span class="text-primary">Farahmand</span>
+                        <span data-i18n="about.name">Usef</span>
+                        <span class="text-primary" data-i18n="about.lastName">Farahmand</span>
                     </h1>
-                    <h2 class="subheading mb-5">
-                        Unity Developer & Technical Artist
-                    </h2>
-                    <p class="lead about-text">
+                    <h2 class="subheading mb-5" data-i18n="about.subtitle">Unity Developer & Technical Artist</h2>
+                    <p class="lead about-text" data-i18n-html="about.bio1">
                         I am a <strong>Game Developer</strong>, <strong>Technical Artist</strong>,
                         and <strong>Game Writer</strong> passionate about creating interactive
-                        experiences that combine technology, art, and storytelling. I specialize in
-                        Unity development, technical animation, gameplay systems,
-                        and creating engaging narratives for games.
+                        experiences that combine technology, art, and storytelling.
                     </p>
-
-                    <p class="lead about-text">
+                    <p class="lead about-text" data-i18n-html="about.bio2">
                         Since starting my journey in 2020, I have worked on various
-                        <strong>Android and PC projects</strong>, combining programming, animation,
-                        and creative writing to bring ideas to life. Through my articles and blog
-                        posts, I explore topics related to <strong>game development</strong>,
-                        design, and the creative process behind building games, while continuously
-                        improving my skills with tools like <strong>Unity</strong>,
-                        <strong>Godot</strong>, and <strong>Cocos Creator</strong>.
+                        <strong>Android and PC projects</strong>.
                     </p>
                     <div class="about-actions">
-
-                        <a class="download-btn"
-                            href="assets/PDF/Usef Farahmand CV.pdf"
-                            download>
+                        <a class="download-btn" id="downloadCvBtn" href="assets/PDF/Usef Farahmand CV.pdf" download="Usef Farahmand CV.pdf">
                             <i class="fas fa-download"></i>
-                            Download CV
+                            <span data-i18n="about.downloadCV">Download CV</span>
                         </a>
-
                         <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/useffarahmand">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-
-                            <a class="social-icon" href="https://medium.com/@UsefFarahmand">
-                                <i class="fab fa-medium"></i>
-                            </a>
-
-                            <a class="social-icon" href="https://www.youtube.com/@UsefFarahmand">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-
-                            <a class="social-icon" href="https://t.me/UsefGameLab">
-                                <i class="fab fa-telegram"></i>
-                            </a>
+                            <a class="social-icon" href="https://www.linkedin.com/in/useffarahmand"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-icon" href="https://medium.com/@UsefFarahmand"><i class="fab fa-medium"></i></a>
+                            <a class="social-icon" href="https://www.youtube.com/@UsefFarahmand"><i class="fab fa-youtube"></i></a>
+                            <a class="social-icon" href="https://t.me/UsefGameLab"><i class="fab fa-telegram"></i></a>
                         </div>
-
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Experience & Journey Section -->
+        <!-- Experience -->
         <section class="resume-section" id="experience">
-
             <div class="resume-section-content">
-
-                <h2 class="mb-5">
-                    Experience & Journey
-                </h2>
-
-
-                <div class="timeline" id="experienceContainer">
-
-
-                </div>
-
-
+                <h2 class="mb-5" data-i18n="experience.sectionTitle">Experience & Journey</h2>
+                <div class="timeline" id="experienceContainer"></div>
             </div>
-
         </section>
 
-        <!-- Achievements Section-->
+        <!-- Achievements -->
         <section class="resume-section" id="achievements">
-
             <div class="resume-section-content">
-
-                <h2 class="mb-5">
-                    Achievements
-                </h2>
-
-
-                <div class="achievement-grid"
-                    id="achievementContainer">
-
-                </div>
-
-
+                <h2 class="mb-5" data-i18n="achievements.sectionTitle">Achievements</h2>
+                <div class="achievement-grid" id="achievementContainer"></div>
             </div>
-
         </section>
 
-        <!-- Explore My Work Section-->
+        <!-- Explore My Work -->
         <section class="resume-section" id="explore">
             <div class="resume-section-content">
-
-                <h2 class="mb-5">Explore My Work</h2>
-
+                <h2 class="mb-5" data-i18n="explore.sectionTitle">Explore My Work</h2>
                 <div class="explore-list">
-
                     <a href="projects.html" id="projects" class="explore-item">
-
-                        <img
-                            src="assets/img/sections/projects-cover.jpg"
-                            alt="Projects">
-
+                        <img src="assets/img/sections/projects-cover.jpg" alt="Projects">
                         <div class="explore-info">
-
-                            <h3>Projects</h3>
-
-                            <p>
-                                Explore my games, prototypes, game jams and development projects.
-                            </p>
-
-                            <span class="explore-btn">
-                                View Projects
-                            </span>
-
+                            <h3 data-i18n="explore.projects.title">Projects</h3>
+                            <p data-i18n="explore.projects.description">Explore my games, prototypes, game jams and development projects.</p>
+                            <span class="explore-btn" data-i18n="explore.projects.btn">View Projects</span>
                         </div>
-
                     </a>
-
                     <a href="articles.html" id="articles" class="explore-item">
-
-                        <img
-                            src="assets/img/sections/articles-cover.jpg"
-                            alt="Articles">
-
+                        <img src="assets/img/sections/articles-cover.jpg" alt="Articles">
                         <div class="explore-info">
-
-                            <h3>Articles</h3>
-
-                            <p>
-                                Read my articles about game development, design and technical art.
-                            </p>
-
-                            <span class="explore-btn">
-                                Read Articles
-                            </span>
-
+                            <h3 data-i18n="explore.articles.title">Articles</h3>
+                            <p data-i18n="explore.articles.description">Read my articles about game development, design and technical art.</p>
+                            <span class="explore-btn" data-i18n="explore.articles.btn">Read Articles</span>
                         </div>
-
                     </a>
-
                     <a href="https://www.useffarahmand.com/gamehub/" class="explore-item gamehub-featured">
-
                         <img src="assets/img/sections/gamehub-cover.jpg" alt="Game Hub">
-
                         <div class="explore-info">
-
-                            <h3>Game Hub</h3>
-
-                            <p>
-                                Play my web games, prototypes and interactive experiments.
-                            </p>
-
-                            <span class="explore-btn">
-                                Enter Game Hub
-                            </span>
-
+                            <h3 data-i18n="explore.gameHub.title">Game Hub</h3>
+                            <p data-i18n="explore.gameHub.description">Play my web games, prototypes and interactive experiments.</p>
+                            <span class="explore-btn" data-i18n="explore.gameHub.btn">Enter Game Hub</span>
                         </div>
-
                     </a>
-
                 </div>
-
             </div>
         </section>
-        
-        <!-- Skills Section-->
+
+        <!-- Skills -->
         <section class="resume-section" id="skills">
-
             <div class="resume-section-content">
-
-
-                <h2 class="mb-5">
-                    Skills
-                </h2>
-
-
-                <div class="skills-grid"
-                    id="skillsContainer">
-
-
-                </div>
-
-
+                <h2 class="mb-5" data-i18n="skills.sectionTitle">Skills</h2>
+                <div class="skills-grid" id="skillsContainer"></div>
             </div>
-
         </section>
 
-        <!-- Recommendations Section -->
+        <!-- Recommendations -->
         <section class="resume-section" id="recommendations">
-
             <div class="resume-section-content">
-
-                <h2 class="mb-5">Recommendations</h2>
-
-
-                <div class="testimonial-grid" id="recommendationContainer">
-
-                    <!-- JSON data will be loaded here -->
-
-                </div>
-
-
+                <h2 class="mb-5" data-i18n="recommendations.sectionTitle">Recommendations</h2>
+                <div class="testimonial-grid" id="recommendationContainer"></div>
             </div>
-
         </section>
 
-        <!-- Currently Exploring Section -->
+        <!-- Currently Exploring -->
         <section class="resume-section" id="exploring">
-
             <div class="resume-section-content">
-
-
-                <h2 class="mb-5">
-                    Currently Exploring
-                </h2>
-
-
-
-                <div class="exploring-list"
-                    id="exploringContainer">
-
-
-                </div>
-
-
+                <h2 class="mb-5" data-i18n="exploring.sectionTitle">Currently Exploring</h2>
+                <div class="exploring-list" id="exploringContainer"></div>
             </div>
-
         </section>
 
-        <!-- Contact Me Section-->
+        <!-- Contact -->
         <section class="contact" id="contact">
-
             <div class="contact-wrapper">
-
-                <!-- Left Side -->
                 <div class="contact-info">
-
-                    <h2>Let's Work Together!</h2>
-
+                    <h2 data-i18n="contact.sectionTitle">Let's Work Together!</h2>
                     <div class="line"></div>
-
-                    <p class="contact-description">
-                        Have a game idea or a creative project in mind?<br>
-                        Let's collaborate and bring your vision to life.
+                    <p class="contact-description" data-i18n-html="contact.description">
+                        Have a game idea or a creative project in mind?<br>Let's collaborate.
                     </p>
-
                     <div class="info-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:contact@useffarahmand.com">
-                                contact@useffarahmand.com
-                            </a>
-                        </div>
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div><h4 data-i18n="contact.emailLabel">Email</h4><a href="mailto:contact@useffarahmand.com">contact@useffarahmand.com</a></div>
                     </div>
-
-
                     <div class="info-item">
-                        <div class="icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/useffarahmand" target="_blank">
-                                linkedin.com/in/useffarahmand
-                            </a>
-                        </div>
+                        <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div><h4 data-i18n="contact.linkedinLabel">LinkedIn</h4><a href="https://www.linkedin.com/in/useffarahmand" target="_blank">linkedin.com/in/useffarahmand</a></div>
                     </div>
-
-
                     <div class="info-item">
-                        <div class="icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/useffarahmand" target="_blank">
-                                github.com/useffarahmand
-                            </a>
-                        </div>
+                        <div class="icon"><i class="fa-brands fa-github"></i></div>
+                        <div><h4 data-i18n="contact.githubLabel">GitHub</h4><a href="https://github.com/useffarahmand" target="_blank">github.com/useffarahmand</a></div>
                     </div>
-
-
                     <div class="info-item">
-                        <div class="icon">
-                            <i class="fa-brands fa-medium"></i>
-                        </div>
-
-                        <div>
-                            <h4>Articles</h4>
-                            <a href="https://medium.com/@UsefFarahmand" target="_blank">
-                                medium.com/@UsefFarahmand
-                            </a>
-                        </div>
+                        <div class="icon"><i class="fa-brands fa-medium"></i></div>
+                        <div><h4 data-i18n="contact.articlesLabel">Articles</h4><a href="https://medium.com/@UsefFarahmand" target="_blank">medium.com/@UsefFarahmand</a></div>
                     </div>
-
                 </div>
-
-                <!-- Form -->
                 <div class="contact-form">
-
-                    <h3>Send a Message</h3>
-
+                    <h3 data-i18n="contact.formTitle">Send a Message</h3>
                     <div class="name-row">
-                        <input type="text"
-                                id="firstName"
-                                placeholder="First Name*"
-                                required>
-
-                        <input type="text"
-                                id="lastName"
-                                placeholder="Last Name*"
-                                required>
+                        <input type="text" id="firstName" data-i18n-placeholder="contact.firstName" placeholder="First Name*" required>
+                        <input type="text" id="lastName" data-i18n-placeholder="contact.lastName" placeholder="Last Name*" required>
                     </div>
-
-                    <input type="email"
-                        id="emailAddress"
-                        placeholder="Email Address*"
-                        required>
+                    <input type="email" id="emailAddress" data-i18n-placeholder="contact.emailAddress" placeholder="Email Address*" required>
                     <span class="field-error" id="emailError"></span>
-
                     <div class="phone-row">
-                        <select id="countryCode">
-                            <!-- populated from data/countries.json -->
-                        </select>
-                        <input type="tel"
-                            id="phoneNumber"
-                            placeholder="Phone Number (optional)">
+                        <select id="countryCode"></select>
+                        <input type="tel" id="phoneNumber" data-i18n-placeholder="contact.phoneNumber" placeholder="Phone Number (optional)">
                     </div>
                     <span class="field-error" id="phoneError"></span>
-
                     <select id="messageTitle">
-                        <option value="" disabled selected hidden>
-                            Title*
-                        </option>
-                        <option value="Job Opportunity">Job Opportunity</option>
-                        <option value="Collaboration">Collaboration</option>
-                        <option value="Project Inquiry">Project Inquiry</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Other">Other</option>
+                        <option value="" disabled selected hidden data-i18n="contact.titlePlaceholder">Title*</option>
+                        <option value="Job Opportunity" data-i18n="contact.titleOptions.jobOpportunity">Job Opportunity</option>
+                        <option value="Collaboration" data-i18n="contact.titleOptions.collaboration">Collaboration</option>
+                        <option value="Project Inquiry" data-i18n="contact.titleOptions.projectInquiry">Project Inquiry</option>
+                        <option value="Feedback" data-i18n="contact.titleOptions.feedback">Feedback</option>
+                        <option value="Other" data-i18n="contact.titleOptions.other">Other</option>
                     </select>
-
-                    <input type="text"
-                        id="customTitle"
-                        placeholder="Write your title here..."
-                        style="display:none;">
-
-                    <textarea id="message"
-                            rows="5"
-                            maxlength="500"
-                            placeholder="Message"></textarea>
-
+                    <input type="text" id="customTitle" data-i18n-placeholder="contact.customTitlePlaceholder" placeholder="Write your title here..." style="display:none;">
+                    <textarea id="message" rows="5" maxlength="500" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Message"></textarea>
                     <div class="char-counter">
-                        <span id="charCount">500</span>/500 characters remaining
+                        <span id="charCount">500</span> <span data-i18n="contact.charsRemaining">characters remaining</span>
                     </div>
-
                     <button id="btn" type="button" onclick="handleSubmit()">
                         <span id="btnText">
                             <i class="fa-solid fa-paper-plane"></i>
-                            Send Message
+                            <span data-i18n="contact.sendMessage">Send Message</span>
                         </span>
-                        <div class="checked">
-                            <svg viewBox="0 0 50 50">
-                                <path fill="none" d="M 0 25 L 20 42 L 50 8"/>
-                            </svg>
-                        </div>
+                        <div class="checked"><svg viewBox="0 0 50 50"><path fill="none" d="M 0 25 L 20 42 L 50 8"/></svg></div>
                     </button>
-
                 </div>
-
             </div>
-
         </section>
 
+        <!-- Testimonial Modal -->
         <div id="testimonialModal" class="testimonial-modal">
-
-
             <div class="testimonial-popup">
-
-
-                <button onclick="closeTestimonial()"
-                        class="testimonial-close">
-
-                    X
-
-                </button>
-
-
+                <button onclick="closeTestimonial()" class="testimonial-close">X</button>
                 <div class="testimonial-popup-header">
-
                     <i class="fa-solid fa-quote-left"></i>
-
-                    <div>
-
-                        <h3 id="modalName"></h3>
-
-                        <span id="modalRole"></span>
-
-                    </div>
-
+                    <div><h3 id="modalName"></h3><span id="modalRole"></span></div>
                 </div>
-
-
                 <p id="modalText"></p>
-
-
             </div>
-
-
         </div>
 
         <!-- Success Popup -->
         <div id="successPopup">
             <div class="success-popup-box">
-                <div class="success-popup-icon">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <h3>Message Sent!</h3>
-                <p>Thanks for reaching out. I'll get back to you as soon as possible.</p>
-                <button class="success-popup-close" onclick="closeSuccessPopup()">
-                    Got it!
-                </button>
+                <div class="success-popup-icon"><i class="fa-solid fa-check"></i></div>
+                <h3 data-i18n="successPopup.title">Message Sent!</h3>
+                <p data-i18n="successPopup.body">Thanks for reaching out. I'll get back to you as soon as possible.</p>
+                <button class="success-popup-close" onclick="closeSuccessPopup()" data-i18n="successPopup.gotIt">Got it!</button>
             </div>
         </div>
 
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <script src="js/jalali.js"></script>
+        <script src="js/i18n.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/achievements.js"></script>
         <script src="js/experience.js"></script>

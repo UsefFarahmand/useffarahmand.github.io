@@ -1,7 +1,33 @@
 /* ================================================
    scripts.js
    Contact form logic + nav helpers + PDF viewer
+   i18n-aware: reads current lang from window.getCurrentLang()
 ================================================ */
+
+/* ------------------------------------------------
+   i18n helper
+------------------------------------------------ */
+function t(path) {
+    // Access translation strings loaded by i18n.js
+    if (!window._i18nStrings) return path;
+    const parts = path.split('.');
+    let val = window._i18nStrings;
+    for (const p of parts) {
+        if (val == null) return path;
+        val = val[p];
+    }
+    return val || path;
+}
+
+// i18n.js exposes data via window — let scripts.js grab it after load
+document.addEventListener('DOMContentLoaded', () => {
+    // Give i18n.js a moment then grab strings
+    setTimeout(() => {
+        if (window.i18nData && window.getCurrentLang) {
+            window._i18nStrings = window.i18nData[window.getCurrentLang()];
+        }
+    }, 300);
+});
 
 
 /* ------------------------------------------------
@@ -51,7 +77,7 @@ function validateName(v)  { return v.trim().length > 0; }
 function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); }
 function validatePhone(v) {
     v = v.trim();
-    if (!v) return true;                                  // optional
+    if (!v) return true;
     return /^\d{5,15}$/.test(v.replace(/[\s\-().]/g, ''));
 }
 
@@ -105,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cust  = document.getElementById('customTitle');
     if (sel && cust) {
         sel.addEventListener('change', () => {
+            // "Other" is always value="Other" regardless of lang
             if (sel.value === 'Other') {
                 cust.style.display = 'block';
                 cust.focus();
@@ -139,17 +166,23 @@ if (lastNameInput) {
 
 if (emailInput) {
     emailInput.addEventListener('input', () => {
+        const msg = window.getCurrentLang && window.getCurrentLang() === 'fa'
+            ? 'لطفاً یک آدرس ایمیل معتبر وارد کنید.'
+            : 'Please enter a valid email address.';
         validateEmail(emailInput.value)
             ? clearFieldError(emailInput, 'emailError')
-            : showFieldError(emailInput, 'emailError', 'Please enter a valid email address.');
+            : showFieldError(emailInput, 'emailError', msg);
     });
 }
 
 if (phoneInput) {
     phoneInput.addEventListener('input', () => {
+        const msg = window.getCurrentLang && window.getCurrentLang() === 'fa'
+            ? 'فقط اعداد، ۵ تا ۱۵ کاراکتر.'
+            : 'Digits only, 5–15 characters.';
         validatePhone(phoneInput.value)
             ? clearFieldError(phoneInput, 'phoneError')
-            : showFieldError(phoneInput, 'phoneError', 'Digits only, 5–15 characters.');
+            : showFieldError(phoneInput, 'phoneError', msg);
     });
 }
 
@@ -174,6 +207,9 @@ if (messageInput && charCount) {
 ------------------------------------------------ */
 
 function resetForm() {
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const sendLabel = lang === 'fa' ? 'ارسال پیام' : 'Send Message';
+
     if (firstNameInput)   firstNameInput.value      = '';
     if (lastNameInput)    lastNameInput.value       = '';
     if (emailInput)       emailInput.value          = '';
@@ -182,7 +218,7 @@ function resetForm() {
     if (customTitleInput) { customTitleInput.value = ''; customTitleInput.style.display = 'none'; }
     if (messageInput)     messageInput.value        = '';
     if (charCount)        charCount.textContent     = maxChars;
-    if (btnText)          btnText.innerHTML         = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+    if (btnText)          btnText.innerHTML         = `<i class="fa-solid fa-paper-plane"></i> ${sendLabel}`;
     if (btn)              btn.disabled              = false;
 }
 
@@ -192,6 +228,11 @@ function resetForm() {
 ------------------------------------------------ */
 
 function handleSubmit() {
+    const lang        = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const emailMsg    = lang === 'fa' ? 'لطفاً یک آدرس ایمیل معتبر وارد کنید.' : 'Please enter a valid email address.';
+    const phoneMsg    = lang === 'fa' ? 'فقط اعداد، ۵ تا ۱۵ کاراکتر.'           : 'Digits only, 5–15 characters.';
+    const sendingMsg  = lang === 'fa' ? 'در حال ارسال…'                          : 'Sending…';
+    const failedMsg   = lang === 'fa' ? 'ارسال ناموفق بود، لطفاً دوباره امتحان کنید.' : 'Submission failed, please try again.';
 
     let valid = true;
 
@@ -210,14 +251,14 @@ function handleSubmit() {
     }
 
     if (!validateEmail(emailInput ? emailInput.value : '')) {
-        showFieldError(emailInput, 'emailError', 'Please enter a valid email address.');
+        showFieldError(emailInput, 'emailError', emailMsg);
         valid = false;
     } else {
         clearFieldError(emailInput, 'emailError');
     }
 
     if (!validatePhone(phoneInput ? phoneInput.value : '')) {
-        showFieldError(phoneInput, 'phoneError', 'Digits only, 5–15 characters.');
+        showFieldError(phoneInput, 'phoneError', phoneMsg);
         valid = false;
     } else {
         clearFieldError(phoneInput, 'phoneError');
@@ -237,13 +278,12 @@ function handleSubmit() {
 
     if (!valid) return;
 
-    // Build phone string
     const countryCode = countryCodeSel ? countryCodeSel.value : '';
     const phoneVal    = phoneInput && phoneInput.value.trim()
         ? countryCode + ' ' + phoneInput.value.trim()
         : 'Not provided';
 
-    if (btnText) btnText.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+    if (btnText) btnText.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> ${sendingMsg}`;
     if (btn)     btn.disabled = true;
 
     emailjs.send('service_uuyu23a', 'template_youl72m', {
@@ -261,8 +301,9 @@ function handleSubmit() {
     })
     .catch(err => {
         console.error('EmailJS error:', err);
-        alert('Submission failed, please try again.');
-        if (btnText) btnText.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+        alert(failedMsg);
+        const sendLabel = lang === 'fa' ? 'ارسال پیام' : 'Send Message';
+        if (btnText) btnText.innerHTML = `<i class="fa-solid fa-paper-plane"></i> ${sendLabel}`;
         if (btn)     btn.disabled = false;
     });
 }

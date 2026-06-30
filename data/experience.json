@@ -11,9 +11,19 @@
             "Unity",
             "C#",
             "Game Development"
+        ],
+        "role_fa": "کارآموز برنامه‌نویس بازی",
+        "description_fa": "آغاز مسیر حرفه‌ای توسعه بازی با کار روی برنامه‌نویسی گیم‌پلی و یادگیری فرآیندهای تولید.",
+        "company_fa": "استودیو وایت دیزاینرز",
+        "type_fa": "کارآموزی",
+        "location_fa": "حضوری",
+        "date_fa": "بهمن ۱۳۹۹ - اردیبهشت ۱۴۰۰",
+        "skills_fa": [
+            "Unity",
+            "سی‌شارپ",
+            "توسعه بازی"
         ]
     },
-
     {
         "company": "White Designers Studios",
         "linkedin": "https://www.linkedin.com/company/wdstudios/posts/?feedView=all",
@@ -27,9 +37,20 @@
             "C#",
             "Gameplay Programming",
             "Mobile Games"
+        ],
+        "role_fa": "برنامه‌نویس جونیور بازی",
+        "description_fa": "توسعه بازی‌های اندروید، پیاده‌سازی مکانیک‌های گیم‌پلی، سیستم‌های UI و ویژگی‌های تعاملی با Unity و C#.",
+        "company_fa": "استودیو وایت دیزاینرز",
+        "type_fa": "تمام‌وقت",
+        "location_fa": "حضوری",
+        "date_fa": "اردیبهشت ۱۴۰۰ - اسفند ۱۴۰۰",
+        "skills_fa": [
+            "Unity",
+            "سی‌شارپ",
+            "برنامه‌نویسی گیم‌پلی",
+            "بازی‌های موبایل"
         ]
     },
-
     {
         "company": "White Designers Studios",
         "linkedin": "https://www.linkedin.com/company/wdstudios/posts/?feedView=all",
@@ -43,9 +64,20 @@
             "Animation",
             "VFX",
             "Shaders"
+        ],
+        "role_fa": "هنرمند فنی جونیور",
+        "description_fa": "کار روی خط‌تولید هنر فنی، انیمیشن‌های کاراکتر، مکانیک‌های بازی، ابزارها و فرآیندهای دارایی.",
+        "company_fa": "استودیو وایت دیزاینرز",
+        "type_fa": "تمام‌وقت",
+        "location_fa": "حضوری",
+        "date_fa": "بهمن ۱۴۰۰ - مهر ۱۴۰۱",
+        "skills_fa": [
+            "انیماتور فنی",
+            "انیمیشن",
+            "جلوه‌های ویژه",
+            "شیدرها"
         ]
     },
-
     {
         "company": "Unbound Game Studio",
         "linkedin": "https://www.linkedin.com/company/unboundgamestudio2/",
@@ -59,9 +91,20 @@
             "C#",
             "Mobile Games",
             "UI Programming"
-        ]
+        ],
+        "role_fa": "توسعه‌دهنده بازی",
+        "description_fa": "توسعه بازی‌های موبایل، ایجاد سیستم‌های گیم‌پلی، یکپارچه‌سازی SDK‌ها، ابزارهای کسب درآمد و بهبود عملکرد پروژه Unity.",
+        "company_fa": "استودیو آنباند گیم",
+        "type_fa": "تمام‌وقت",
+        "date_fa": "آذر ۱۴۰۱ - آبان ۱۴۰۳",
+        "skills_fa": [
+            "Unity",
+            "سی‌شارپ",
+            "بازی‌های موبایل",
+            "برنامه‌نویسی رابط کاربری"
+        ],
+        "location_fa": "دورکاری | ازمیر، ترکیه"
     },
-
     {
         "company": "Hamrahe Aval (MCI)",
         "linkedin": "https://www.linkedin.com/company/hamraheaval/",
@@ -74,9 +117,19 @@
             "Virtual Reality (VR)",
             "Augmented Reality (AR)",
             "Unity"
+        ],
+        "role_fa": "توسعه‌دهنده واقعیت مجازی",
+        "description_fa": "توسعه تجربیات تعاملی VR و AR با استفاده از Unity.",
+        "company_fa": "همراه اول (MCI)",
+        "type_fa": "پاره‌وقت",
+        "location_fa": "دورکاری",
+        "date_fa": "دی ۱۴۰۲ - اسفند ۱۴۰۲",
+        "skills_fa": [
+            "واقعیت مجازی (VR)",
+            "واقعیت افزوده (AR)",
+            "Unity"
         ]
     },
-
     {
         "company": "Apexia Soft",
         "linkedin": "https://www.linkedin.com/company/apexiasoft/posts/?feedView=all",
@@ -89,9 +142,19 @@
             "Unity",
             "C#",
             "Gameplay Systems"
-        ]
+        ],
+        "role_fa": "توسعه‌دهنده Unity 3D",
+        "description_fa": "کار روی پروژه‌های Unity، پیاده‌سازی ویژگی‌های گیم‌پلی، یکپارچه‌سازی SDK‌ها و بهینه‌سازی اپلیکیشن‌ها.",
+        "company_fa": "اپکسیا سافت",
+        "type_fa": "پاره‌وقت",
+        "date_fa": "دی ۱۴۰۲ - دی ۱۴۰۳",
+        "skills_fa": [
+            "Unity",
+            "سی‌شارپ",
+            "سیستم‌های گیم‌پلی"
+        ],
+        "location_fa": "دورکاری | دبی، امارات متحده عربی"
     },
-
     {
         "company": "Content Creator & Game Industry Blogger",
         "linkedin": "https://www.linkedin.com/company/jolly-panda/?viewAsMember=true",
@@ -105,9 +168,20 @@
             "Blogging",
             "Storytelling",
             "Social Media Management"
+        ],
+        "role_fa": "توسعه‌دهنده بازی و تولیدکننده محتوا",
+        "description_fa": "تولید محتوای توسعه بازی، نوشتن مقالات، به‌اشتراک‌گذاری بینش‌ها و محتوای آموزشی درباره صنعت بازی.",
+        "company_fa": "تولیدکننده محتوا و وبلاگ‌نویس صنعت بازی",
+        "type_fa": "آزادکار",
+        "location_fa": "دورکاری",
+        "date_fa": "خرداد ۱۴۰۳ - اکنون",
+        "skills_fa": [
+            "تولید محتوا",
+            "وبلاگ‌نویسی",
+            "داستان‌سرایی",
+            "مدیریت شبکه‌های اجتماعی"
         ]
     },
-
     {
         "company": "Jolly Panda",
         "linkedin": "https://www.linkedin.com/company/jolly-panda/?viewAsMember=true",
@@ -120,6 +194,17 @@
             "Team Management",
             "Game Development",
             "Creative Direction"
-        ]
+        ],
+        "description_fa": "بنیان‌گذار جولی پاندا، استودیوی خلاقانه بازی و اپلیکیشن با تمرکز بر ساخت تجربیات دیجیتال شاد.",
+        "type_fa": "تمام‌وقت",
+        "location_fa": "حضوری",
+        "date_fa": "خرداد ۱۴۰۵ - اکنون",
+        "skills_fa": [
+            "مدیریت تیم",
+            "توسعه بازی",
+            "هدایت خلاقانه"
+        ],
+        "role_fa": "بنیان‌گذار | طراحی دنیاهای دیجیتال شاد",
+        "company_fa": "جولی پاندا"
     }
 ]

@@ -1,25 +1,30 @@
 [
     {
         "title": "Advanced Unity Development",
+        "title_fa": "توسعه پیشرفته Unity",
         "icon": "fa-solid fa-wand-magic-sparkles",
-        "description": "Exploring advanced gameplay systems, architecture and optimization techniques."
+        "description": "Exploring advanced gameplay systems, architecture and optimization techniques.",
+        "description_fa": "بررسی سیستم‌های گیم‌پلی پیشرفته، معماری و تکنیک‌های بهینه‌سازی."
     },
-
     {
         "title": "Technical Art",
+        "title_fa": "هنر فنی",
         "icon": "fa-solid fa-code",
-        "description": "Improving skills in shaders, animation workflows and visual effects."
+        "description": "Improving skills in shaders, animation workflows and visual effects.",
+        "description_fa": "ارتقای مهارت در شیدرها، فرآیندهای انیمیشن و جلوه‌های بصری."
     },
-
     {
         "title": "VR & AR Experiences",
+        "title_fa": "تجربیات VR و AR",
         "icon": "fa-solid fa-vr-cardboard",
-        "description": "Experimenting with immersive interactive experiences."
+        "description": "Experimenting with immersive interactive experiences.",
+        "description_fa": "آزمایش تجربیات تعاملی غوطه‌ور."
     },
-
     {
         "title": "Game Design & Writing",
+        "title_fa": "طراحی بازی و نوشتن",
         "icon": "fa-solid fa-book-open",
-        "description": "Developing storytelling skills and writing about game development."
+        "description": "Developing storytelling skills and writing about game development.",
+        "description_fa": "توسعه مهارت‌های داستان‌سرایی و نوشتن درباره توسعه بازی."
     }
 ]

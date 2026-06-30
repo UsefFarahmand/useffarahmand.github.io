@@ -1,37 +1,44 @@
 [
     {
         "title": "Game Development",
+        "title_fa": "توسعه بازی",
         "icon": "fa-brands fa-unity",
-        "description": "Unity, C#, Gameplay Systems, Mobile & PC Games"
+        "description": "Unity, C#, Gameplay Systems, Mobile & PC Games",
+        "description_fa": "Unity، سی‌شارپ، سیستم‌های گیم‌پلی، بازی‌های موبایل و PC"
     },
-
     {
         "title": "Technical Art",
+        "title_fa": "هنر فنی",
         "icon": "fa-solid fa-palette",
-        "description": "Technical Animation, VFX, Shaders, Tools & Art Pipelines"
+        "description": "Technical Animation, VFX, Shaders, Tools & Art Pipelines",
+        "description_fa": "انیمیشن فنی، جلوه‌های بصری، شیدرها، ابزارها و خط‌تولید هنر"
     },
-
     {
         "title": "UI & UX",
+        "title_fa": "رابط کاربری و تجربه کاربری",
         "icon": "fa-solid fa-window-maximize",
-        "description": "User Interface Programming, UI Systems & User Experience"
+        "description": "User Interface Programming, UI Systems & User Experience",
+        "description_fa": "برنامه‌نویسی رابط کاربری، سیستم‌های UI و تجربه کاربری"
     },
-
     {
         "title": "Writing & Content",
+        "title_fa": "نوشتن و تولید محتوا",
         "icon": "fa-solid fa-pen-nib",
-        "description": "Game Design Ideas, Storytelling, Blogging & Articles"
+        "description": "Game Design Ideas, Storytelling, Blogging & Articles",
+        "description_fa": "ایده‌های طراحی بازی، داستان‌سرایی، وبلاگ‌نویسی و مقالات"
     },
-
     {
         "title": "Tools & Engines",
+        "title_fa": "ابزارها و موتورهای بازی",
         "icon": "fa-solid fa-gears",
-        "description": "Unity, Godot, Cocos Creator, VR & AR Development"
+        "description": "Unity, Godot, Cocos Creator, VR & AR Development",
+        "description_fa": "Unity، Godot، Cocos Creator، توسعه VR و AR"
     },
-
     {
         "title": "Professional Skills",
+        "title_fa": "مهارت‌های حرفه‌ای",
         "icon": "fa-solid fa-users",
-        "description": "Team Management, Content Creation, Social Media Management"
+        "description": "Team Management, Content Creation, Social Media Management",
+        "description_fa": "مدیریت تیم، تولید محتوا، مدیریت شبکه‌های اجتماعی"
     }
 ]
